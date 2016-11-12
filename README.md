@@ -2,13 +2,13 @@
 An extensive list of everyday modern JavaScript patterns with syntactical examples 
 
 ## Introduction
-This repository is a place for everyone (beginners to advanced) to come to, view and familiarize themselves with modern everyday patterns in vanilla JavaScript. It will cover topics ranging from general to advanced as well as design patterns. In future releases we will also cover Angular(1,2), Node and React patterns - how we compose that in one repo is yet to be determined.
+This repository is a place for everyone (beginners to advanced) to come to, view and familiarize themselves with modern everyday patterns in vanilla JavaScript. It will cover topics ranging from general to advanced as well as design patterns. In future releases we will also cover Angular(1,2), Node and React patterns - how that is composed in one repo is yet to be determined.
 
-Note that I will try and cover both ES5 & ES6 syntax in most of the examples and once this repository contains enough information it will be converted into full blown application.
+Note that I will try and cover both ES5 & ES6 syntax in most of the examples and once this repository contains enough information it will be converted into full blown application of my choice. The aim of crafting an application will be for users to view examples quickly so that within 2-3 minutes you can cover alot. 
 
 ## Table of Contents
 
-I. General Patterns
+I. GENERAL PATTERNS
  * Variable Declaration
  * let & const
  * Globals
@@ -17,7 +17,8 @@ I. General Patterns
  * Block Scope vs Lexical Scope
  * Conditionals
  * Function Declarations
-* Function Patterns
+ 
+II. FUNCTION PATTERNS
  * IIFE / IIAF
  * Immediate Object Initialization
  * Callbacks
@@ -26,18 +27,21 @@ I. General Patterns
  * Returning from Functions
  * Arrow Functions
  * Partial Application
-* Object Patterns
+
+III. OBJECT PATTERNS
  * Object Literals
  * Factory Functions
  * Prototype Chains
  * ES5 Classes
  * ES6 Classes
-* Async Patterns
+ 
+IV. ASYNC PATTERNS
  * More Callbacks
  * AJAX
  * Promises
  * Async Generators
-* Design Patterns
+ 
+V. DESIGN PATTERNS
  * Module 
  * Revealing Module 
  * Singleton 
@@ -45,10 +49,12 @@ I. General Patterns
  * Observer 
  * Decorator
  * Facade
-* Module Creation Patterns
+
+VI. MODULE CREATION PATTERNS
  * Node & NPM
  * ES6
-* Library Creation Patterns 
  
+VII. LIBRARY CREATION PATTERNS (Bonus)
  
 ## Contributing
+Feel free to contribute to this repository by sending a PR for a specific pattern that you would like to see added. A guide will be put up shortly. 
