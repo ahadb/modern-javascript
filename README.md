@@ -8,7 +8,7 @@ Note that I will try and cover both ES5 & ES6 syntax in most of the examples and
 
 ## Table of Contents
 
-* General Patterns
+I. General Patterns
  * Variable Declaration
  * let & const
  * Globals
@@ -45,6 +45,9 @@ Note that I will try and cover both ES5 & ES6 syntax in most of the examples and
  * Observer 
  * Decorator
  * Facade
+* Module Creation Patterns
+ * Node & NPM
+ * ES6
 * Library Creation Patterns 
  
  
