@@ -1,0 +1,1 @@
+# Libaray Creation Patterns
