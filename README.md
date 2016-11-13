@@ -17,6 +17,7 @@ I. GENERAL PATTERNS
  * Block Scope vs Lexical Scope
  * Conditionals
  * Function Declarations
+ * The `this` Keyword
  
 II. FUNCTION PATTERNS
  * IIFE / IIAF
