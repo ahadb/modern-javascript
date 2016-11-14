@@ -18,17 +18,19 @@ const list = getNames();
 let i;
 let attr = true;
 
-/* (iv.) never do this, always declare with `var` */
+/* (iv.) never do this, always declare with `var` to prevent global clutter */
 foo = 100;
 
 /* (v.) undeclared variables throw errors in strict mode */
 function foo() {
-	var a = 1; // Throws a ReferenceError in strict mode
-	z = 2;
+	var a = 1;
+	z = 2; // Throws a ReferenceError in strict mode
 }
 
-/* (vi.) anti-patterns in ES5 and ES6 */
+/* (vi.) anti-pattern in ES5 and ES6. don't do this */
 const foo  = 10,
 	    bar  = 15,
 	    baz  = [],
 	    norf = false;
+
+

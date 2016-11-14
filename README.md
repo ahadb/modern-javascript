@@ -7,7 +7,7 @@ This repository is a place for everyone (beginners to advanced) to come to, view
 ## Table of Contents
 
 I. GENERAL PATTERNS
- * Variable Declaration
+ * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * let & const
  * Globals
  * Minimizing Globals
