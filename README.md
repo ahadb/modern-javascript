@@ -8,7 +8,7 @@ This repository is a place for everyone (beginners to advanced) to come to, view
 
 I. GENERAL PATTERNS
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
- * let & const
+ * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
  * Globals
  * Minimizing Globals
  * Loops
@@ -56,7 +56,7 @@ VI. MODULE CREATION PATTERNS
 VII. LIBRARY CREATION PATTERNS (Bonus)
 
 ## Future of This Project
- In future releases we will also cover Angular(1.x, 2.x), Node and React patterns. In the future the formula for adding patterns will be determined by libraries / frameworks that hold the most market value and once this repository contains enough information it will be converted into full blown application. The aim of crafting an application will be for users to view examples quickly so that within 2-3 minutes one can cover a great deal which might add to your programming skill in shorter bursts. I prefer it that way ...
- 
+ In future releases we will also cover Angular(1.x, 2.x), Node and React patterns, and the formula for adding patterns will be determined by libraries / frameworks that hold the most market value. Once this repository contains enough information it will be converted into full blown application. The aim of crafting an application will be for users to view examples quickly so that within 2-3 minutes one can cover a great deal which might add to your programming skill in shorter bursts. I prefer shorter bursts of contextual learning over longer periods.
+  
 ## Contributing
 Feel free to contribute to this repository by sending a PR for a specific pattern that you would like to see added. A guide will be put up shortly. 

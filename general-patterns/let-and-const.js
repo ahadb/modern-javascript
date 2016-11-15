@@ -48,5 +48,23 @@ function testVar() {
 	// x is also visible here
 }
 
+/* (vi.) all together now, we'll see more block scope patterns later on
+ * the function won't run, but it illustrates fundamental concepts
+ */
+function tricky() {
+	{
+		let a;
+		{
+			// ok since it's a block scoped name
+			const a = "sneaky";
+			// error, was just defined with `const` above
+			a = "foo";
+		}
+		// ok since it was declared with `let`
+		a = "bar";
+		// error, already declared above in this block
+		let a = "inner";
+	}
+}
 
 
