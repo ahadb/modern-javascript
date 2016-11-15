@@ -91,6 +91,7 @@ function testVar() {
 	}
 	// x is also visible here
 }
+```
 
 vi. All together now, we'll see more block scope patterns later on the function won't run, but it illustrates fundamental concepts
 ```javascript
