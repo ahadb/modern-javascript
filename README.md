@@ -9,12 +9,10 @@ This repository is a place for everyone (beginners to advanced) to come to, view
 I. GENERAL PATTERNS
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
- * Globals
- * Minimizing Globals
+ * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
  * Loops
  * Block Scope vs Lexical Scope
  * Conditionals
- * Function Declarations
  * The `this` Keyword
  
 II. FUNCTION PATTERNS
