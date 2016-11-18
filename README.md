@@ -6,14 +6,18 @@ This repository is a place for everyone (beginners to advanced) to come to, view
 
 ## Table of Contents
 
-I. [**GENERAL PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)
+I. [**GENERAL / ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
  * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
  * Loops
+ * Naming Conventions
  * Block Scope vs Lexical Scope
+ * Code Readability
  * Conditionals
  * The `this` Keyword
+ * Comments
+ * Linting
  
 II. FUNCTION PATTERNS
  * IIFE / IIAF
@@ -51,10 +55,18 @@ VI. MODULE CREATION PATTERNS
  * Node & NPM
  * ES6
  
-VII. LIBRARY CREATION PATTERNS (Bonus)
+VII. LIBRARY CREATION PATTERNS
+ * Authoring
+ * Distribution
+
+VIII. MODERN-ESQUE PATTERNS
+ * Module Bundlers
+ * Task Runners
+ * Compilers
+ * TypeScript
 
 ## Future of This Project
- In future releases we will also cover Angular(1.x, 2.x), Node and React patterns, and the formula for adding patterns will be determined by libraries / frameworks that hold the most market value. Once this repository contains enough information it will be converted into full blown application. The aim of crafting an application will be for users to view examples quickly so that within 2-3 minutes one can cover a great deal which might add to your programming skill in shorter bursts. I prefer shorter bursts of contextual learning over longer periods.
+In future releases we will also cover Angular(1.x, 2.x), Node and React patterns. The formula for adding patterns will be determined by libraries / frameworks that hold the most market value. Once this repository contains enough information it will be converted into full blown application. The aim of crafting an application will be for users to view examples quickly so that within 2-3 minutes one can cover a great deal which might add to your programming skill in shorter bursts. I prefer shorter bursts of contextual learning over longer periods.
   
 ## Contributing
 Feel free to contribute to this repository by sending a PR for a specific pattern that you would like to see added. A guide will be put up shortly. 
