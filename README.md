@@ -10,13 +10,14 @@ I. [**GENERAL / ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patter
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
  * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
- * Loops
- * Naming Conventions
- * Block Scope vs Lexical Scope
+ * Coding & Naming Conventions
+ * Commas, Comments, Semicolons & Whitespace
+ * Comments
  * Code Readability
+ * Loops
+ * Block Scope vs Lexical Scope
  * Conditionals
  * The `this` Keyword
- * Comments
  * Linting
  
 II. FUNCTION PATTERNS

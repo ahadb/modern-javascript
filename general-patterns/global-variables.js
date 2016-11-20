@@ -1,5 +1,5 @@
 /**
- * global variables
+ * Global Variables
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
  *
  * @copyright 2016 Ahad Bokhari
@@ -14,7 +14,7 @@
  * We'll explore more patterns that minimize globals in classes, and modules
  */
 
-/* (i.) always declare using an identifier your variables, if you don't it will clutter the global scope */
+/* (i.) Always declare using an identifier your variables, if you don't it will clutter the global scope */
 const foo = Math.PI;
 const bar = [];
 var quux = new Wizardry();
@@ -70,8 +70,6 @@ var countSilently = function() {
 window.setTimeout(countSilently, 10);
 window.setTimeout(count,         10);  //=> 2 3 7 8 9
 
-
-
 /* (iv.) You can use 'this' in method definitions to refer to attributes of the
  * method's object.
  */
@@ -98,7 +96,6 @@ obj.getName(); //=> undefined *whoops*
 
 // In fact, this got bound to the global object in the callback.
 // To get around this, we use `that`, `self`, or whatever you decide
-
 var obj = {
   name: 'quux',
   getName: function() {
@@ -116,7 +113,6 @@ obj.getName();  //=> `quux`
  * is bound to 'obj'. But when a function is invoked by itself 'this' is bound
  * to the global object.
  */
-
 var life = 'I love me some JavaScript!';
 
 function meaning() {
