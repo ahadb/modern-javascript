@@ -12,8 +12,6 @@ I. [**GENERAL / ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patter
  * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
  * Coding & Naming Conventions
  * Commas, Comments, Semicolons & Whitespace
- * Comments
- * Code Readability
  * Loops
  * Block Scope vs Lexical Scope
  * Conditionals
