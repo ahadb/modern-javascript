@@ -10,7 +10,7 @@ I. [**GENERAL / ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patter
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
  * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
- * Coding & Naming Conventions
+ * [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
  * Commas, Comments, Semicolons & Whitespace
  * Loops
  * Block Scope vs Lexical Scope
