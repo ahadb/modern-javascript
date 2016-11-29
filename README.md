@@ -22,6 +22,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
   * Block Scope vs Lexical Scope
   * Conditionals
   * Linting
+  * Testing
  
 2. FUNCTIONS
  * IIFE / IIAF
@@ -78,6 +79,35 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 In future releases we will also cover Angular (1.x, 2.x) and React patterns. The formula for adding patterns will be determined
 by libraries / frameworks that hold the most market value. Once this repository contains enough information it will be converted into
 a full blown application so developers can cover a great deal and retain information in short, but more meaningful bursts.
+
+## Resources
+
+### Blogs
+
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Scotch.io JavaScript](https://scotch.io/tag/javascript)
+* [Raganwald by Reginald Braithwaite](http://raganwald.com/)
+* [JavaScript is Sexy](http://javascriptissexy.com/)
+* [2@lity by Dr. Axel Rauschmayer](http://www.2ality.com/)
+* [Toptal Engineering Blog](https://www.toptal.com/developers/blog)
+* [Ben Alman](http://benalman.com/)
+* [David Walsh](https://davidwalsh.name/)
+* [Medium's JavaScript Collection]()
+* [SitePoint JavaScript](https://www.sitepoint.com/developer-center/javascript-developer-center/)
+* Perfection Kills by Kangax
+
+### Books
+* JavaScript Design Patterns - Addy Osmani
+* [Human JS](http://read.humanjavascript.com/) - Henrik Joreteg
+* Object Oriented JavaScript - Stoyan Stefanov
+* JavaScript Patterns - Nicholas C. Zakas
+* You Don't Know JS - Kyle Simpson
+* [Eloquent JavaScript](http://eloquentjavascript.net/) - Marijn Haverbeke
+* JavaScript: The Good Parts - Douglas Crockford
+* Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript - David Herman
+* Maintainable JavaScript - Nicholas C. Zakas
+* Professional JavaScript for Web Developers - Nicholas C. Zakas 
+
 
 ## Contributing
 Feel free to contribute to this repository by sending a PR for a specific pattern that you would like to see added. A guide will be
