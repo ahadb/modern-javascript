@@ -9,7 +9,7 @@ This repository is a place for everyone (beginners to advanced) to view and fami
 1. [**GENERAL / ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)
  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
- * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js) (don't abuse them...)
+ * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
  * [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
  * [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
  * Strings
