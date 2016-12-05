@@ -97,16 +97,16 @@ a full blown application so developers can cover a great deal and retain informa
 * Perfection Kills by Kangax
 
 ### Books
-* JavaScript Design Patterns - Addy Osmani
+* [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) - Addy Osmani
 * [Human JS](http://read.humanjavascript.com/) - Henrik Joreteg
-* Object Oriented JavaScript - Stoyan Stefanov
-* JavaScript Patterns - Nicholas C. Zakas
-* You Don't Know JS - Kyle Simpson
+* [Object Oriented JavaScript](https://www.amazon.com/Object-Oriented-JavaScript-Stoyan-Stefanov-ebook/dp/B0057UNEJC) - Stoyan Stefanov
+* [JavaScript Patterns] Stoyan Stefanov
+* [You Don't Know JS](http://shop.oreilly.com/category/get/kyle-simpson-kit.do) - Kyle Simpson
 * [Eloquent JavaScript](http://eloquentjavascript.net/) - Marijn Haverbeke
-* JavaScript: The Good Parts - Douglas Crockford
-* Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript - David Herman
-* Maintainable JavaScript - Nicholas C. Zakas
-* Professional JavaScript for Web Developers - Nicholas C. Zakas 
+* [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do) - Douglas Crockford
+* [Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](https://www.amazon.com/Effective-JavaScript-Specific-Software-Development/dp/0321812182) - David Herman
+* [Maintainable JavaScript](https://www.amazon.com/Maintainable-JavaScript-Writing-Readable-Code/dp/1449327680/ref=sr_1_sc_1?s=books&ie=UTF8&qid=1480954592&sr=1-1-spell&keywords=maintanable+javascript) - Nicholas C. Zakas
+* [Professional JavaScript for Web Developers](http://shop.oreilly.com/product/9781118026694.do) - Nicholas C. Zakas 
 
 
 ## Contributing
