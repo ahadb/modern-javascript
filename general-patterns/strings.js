@@ -31,4 +31,8 @@ const str = 'This is a string with more than 100 characters and should be writte
 
 
 // c. anti-pattern, don't do this
-const badHabit = 'This is a string split by new lines';
+const badHabit = 'This is a string split by new lines \
+                  which is a really bad habit to form, \
+                  so never do this. Keep your code \
+                  readable at all times.';
+
