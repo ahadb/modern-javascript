@@ -1,4 +1,20 @@
-# General Patterns
+# Table of Contents: JavaScript Essentials
+
+* 1.1 [Variable Declarations](#variable-declarations)
+* 1.2 [`let` & `const`](#let-and-const) 
+* 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
+* 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
+* 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
+* [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
+* 1.6 Type Coercion
+* 1.7 Arrays
+* 1.8 Objects
+* 1.9 Destructuring
+* 1.10 Loops
+* 1.11 Block Scope vs Lexical Scope
+* 1.12 Conditionals
+* 1.13 Linting
+* 1.14 Testing
 
 ## Variable Declarations
 
@@ -45,7 +61,7 @@ const foo  = 10,
 	    norf = false;
 ```	    
 
-## let & const
+## let and const
 
 i. Favor const over let in ES6 if you don't need to reassign. const means that the identifier can't be reassigned; in other words using const creates an immutable binding.
 ```javascript
