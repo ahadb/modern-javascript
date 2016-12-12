@@ -1,11 +1,11 @@
 # Table of Contents
 
 1. [Variable Declarations](#variable-declarations)
-2. [`let` & `const`](#1.2-let-and-const) 
-3. [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-4. [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-5. [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
-6. [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
+2. [`let` & `const`](#let-and-const) 
+3. [Global Variables](#gloabal-variables)
+4. [Coding and Naming Conventions](#coding-and-naming-conventions)
+5. [Commas, Comments, Semicolons and Whitespace](#commas-comments-semicolons-and-whitespace)
+6. [Strings](#strings)
 7. Type Coercion
 8. Arrays
 9. Objects
@@ -65,7 +65,7 @@ const foo  = 10,
 
 ## 1.2 let and const
 
-i. Favor const over let in ES6 if you don't need to reassign. const means that the identifier can't be reassigned; in other words using const creates an immutable binding.
+2.1 Favor const over let in ES6 if you don't need to reassign. const means that the identifier can't be reassigned; in other words using const creates an immutable binding.
 ```javascript
 const baz = 75; // all of the below assignment operators will throw
 baz = 24;
@@ -74,21 +74,21 @@ baz += 24;
 baz /= 24;
 ```
 
-ii. The following will not throw, make a note of this pattern - clearly a const value can change
+2.2 The following will not throw, make a note of this pattern - clearly a const value can change
 ```javascript
 const quux = {};
 quux.norf = 75;
 console.log(quux.norf); //=> 75
 ```
 
-iii. Use `let` when you need to reassign a variable.
+2.3 Use `let` when you need to reassign a variable.
 ```javascript
 let norf = 'norf';
 norf = 'quux';
 console.log(norf); //=> `quux`
 ```
 
-iv. Additionally `let` is only visible in the for() loop */
+2.4 Additionally `let` is only visible in the for() loop */
 ```javascript
 function testLet() {
 	// x is not visible here
@@ -99,7 +99,7 @@ function testLet() {
 }
 ```
 
-v. `let` works very much like `var`, the difference is that the scope of a `var`
+2.5 `let` works very much like `var`, the difference is that the scope of a `var`
 variable is the entire enclosing funciton
 ```javascript
 function testVar() {
@@ -111,7 +111,7 @@ function testVar() {
 }
 ```
 
-vi. All together now, we'll see more block scope patterns later on the function won't run, but it illustrates fundamental concepts
+2.6 All together now, we'll see more block scope patterns later on the function won't run, but it illustrates fundamental concepts
 ```javascript
 function tricky() {
 	{
@@ -130,19 +130,13 @@ function tricky() {
 }
 ```
 
-[&#8593; Back to TOC](#table-of-contents) 
+[**&#8593; Back to TOC**](#table-of-contents) 
 
 ## 1.3 Global Variables
     
-Note: It is impossible to avoid global JavaScript, something will always be dangling in the
-global scope. There are many approaches however, from simple to more complex, to not abuse
-global scope - after reading through this section you should already start understanding
-the power of patterns :/
+> Note: It is impossible to avoid global JavaScript, something will always be dangling in the global scope. There are many approaches however, from simple to more complex, to not abuse global scope - after reading through this section you should already start understanding the power of patterns :/ We'll explore more patterns that minimize globals in classes, and modules
 
-We'll explore more patterns that minimize globals in classes, and modules
-
-
-i. always declare using an identifier your variables, if you don't it will clutter the global scope 
+3.1 Always declare using an identifier your variables, if you don't it will clutter the global scope 
 ```javascript
 const foo = Math.PI;
 const bar = [];
@@ -157,7 +151,7 @@ window.x = 10;
 delete foo; // returns `true`
 ```
 
-ii. It's very important to declare your variables, even in functions
+3.2 It's very important to declare your variables, even in functions
 ```javascript
 (function() {
   const norf = 'Laser Tag!';
@@ -183,7 +177,7 @@ console.log(norf);  //=> `Laser Tag` *whoops*
 console.log(norf);  //=> undefined
 ```
 
-iii. When global variables sneak into your code the can cause problems.
+3.3 When global variables sneak into your code the can cause problems.
 ```javascript
 var count = function() {
   for (i = 0; i < 10; i += 1) {
@@ -204,7 +198,7 @@ window.setTimeout(countSilently, 10);
 window.setTimeout(count,         10);  //=> 2 3 7 8 9
 ```
 
-iv. You can use 'this' in method definitions to refer to attributes of the method's object.
+3.4 You can use 'this' in method definitions to refer to attributes of the method's object.
 ```javascript
 var obj = {
   name: 'quux',
@@ -243,7 +237,7 @@ var obj = {
 obj.getName();  //=> `quux`
 ```
 
-v. The keyword `this` is dynamically assigned at the callsite of a function.When a 
+3.5 The keyword `this` is dynamically assigned at the callsite of a function.When a 
 function is invoked as a method, i.e. obj.method(), 'this' is bound to 'obj'. 
 But when a function is invoked by itself 'this' is bound to the global object.
 ```javascript
@@ -270,8 +264,7 @@ getName();  //=> undefined
 // wanted to scratch the surface with the `this` keyword, tbd in later patterns
 ```
 
-vi. *Recap:* to avoid or help prevent the use of globals in your applications you can use
-the following patterns popular amongst JavaScript developers
+3.6 *Recap:* to avoid or help prevent the use of globals in your applications you can use the following patterns popular amongst JavaScript developers
 ```javascript
 // a. generally you can use a closure in both ES5 & ES6
 function fullName(firstName, lastName) {
@@ -331,11 +324,11 @@ const myModule = function () {
 console.log(foo); //=> 1 *voila!*
 ```    
 
-[&#8593; Back to TOC](#table-of-contents) 
+[**&#8593; Back to TOC**](#table-of-contents)  
 	    
-## 1.4 Coding & Naming Conventions
+## 1.4 Coding and Naming Conventions
 
-i. Be courteous to those who read your code and allow for context in your naming - be descriptive and try to avoid one letter names
+4.1 Be courteous to those who read your code and allow for context in your naming - be descriptive and try to avoid one letter names
 ```javascript
 // be descriptive
 function initialize() {
@@ -348,14 +341,14 @@ function i() {
 }
 ```
 
-ii. A few simple rules for naming things that you should try and adhere to
+4.2 A few simple rules for naming things that you should try and adhere to
 ```javascript
 /*
- * 1a. use upper and lower case letters (A - Z, a - z) and digits (0 - 9) to form names
- * 2a. do not use the underscore, _ or dollar sign, $, and avoid use of international characters
- * 3a. most variables and functions should start with a lower case letter
- * 4a. Constructor functions and Classes should be capitalized
- * 5a. Constructor functions that must be used with the `new` prefix should start with a capital letter
+ * use upper and lower case letters (A - Z, a - z) and digits (0 - 9) to form names
+ * do not use the underscore, _ or dollar sign, $, and avoid use of international characters
+ * most variables and functions should start with a lower case letter
+ * constructor functions and Classes should be capitalized
+ * constructor functions that must be used with the `new` prefix should start with a capital letter
  */
 const result = [];
 const myErrorClass = document.getElementsByClassName('error');
@@ -398,7 +391,7 @@ Polygon.prototype.setArea = function() {
 let parallelogram = new Polygon(400, 300);
 ```
 
-iii. Variables should be declared before they are used and should be descriptive preferably variables should be alphabetical order
+4.3 Variables should be declared before they are used and should be descriptive preferably variables should be alphabetical order
 ```javascript
 const age = 0;
 const adult = true;
@@ -407,7 +400,7 @@ const isTeenager = !!adult;
 const location = {};
 ```
 
-iv. When to use camel vs pascal case
+4.4 When to use camel vs pascal case
 ```javascript
 // Use camelCase only when naming functions, objects, variables and instances
 const myObj = {};
@@ -425,7 +418,7 @@ function empty_array() {
 }
 ```
 
-v. Array and Object Literals
+4.5 Array and Object Literals
 ```javascript
 // always use the literal notation {}, [] instead of new Object() or new Array()
 let myObj = {};
@@ -433,7 +426,7 @@ let myArr = [];
 myArr.splice(0, 1);
 ```
 
-vi. Function declarations
+4.6 Function declarations
 ```javascript
 /* 1a. functions should be declared before they are used,
  * 2a. there should be no space between the name of a function and it's invocation left of
@@ -472,7 +465,7 @@ const foo = new Function('x', 'y', 'return x / y * 10');
 });
 ```
 
-vii. Statements
+4.7 Statements
 ```javascript
 /* 1a. compound statements should be indented with 2 spaces
  * 2a. the should be space between a keyword followed by parens () - denotes not an invocation
@@ -546,11 +539,11 @@ catch(err) {
 }
 ```
 
-[&#8593; Back to TOC](#table-of-contents) 
+[**&#8593; Back to TOC**](#table-of-contents)  
 
 ## 1.5 Commas, Comments, Semicolons and Whitespace
 
-i. Use commas before as the last token before line breaks
+5.1 Use commas before as the last token before line breaks
 ```javascript
 // a. for example, this is good practice
 const x = {
@@ -576,7 +569,7 @@ const y = {
 };
 ```
 
-ii. It's useful for those reading your code (and perhaps yourself) to see comments. Be clever with the usage of comments, don't clutter code or leave erroneous comments which make programs even harder to read
+5.2 It's useful for those reading your code (and perhaps yourself) to see comments. Be clever with the usage of comments, don't clutter code or leave erroneous comments which make programs even harder to read
 
 ```javascript
 // a. use /* ... */ for multiline comments
@@ -617,7 +610,7 @@ const fullname = '';
 //@todo: find and refactor these variables to camelCase
 ```
 
-(iii.) There is alot of debate around this topic, but you should use semicolons in your code. Ultimately, it's a team / organizational decision and consistency is key
+5.3 There is alot of debate around this topic, but you should use semicolons in your code. Ultimately, it's a team / organizational decision and consistency is key
 
 ```javascript
 // a. required when two statements are on the same line
@@ -663,7 +656,7 @@ const x = {
 })();
 ```
 
-iv. Drastically improve readability by using consistent rules in your whitespace which proved significant benefit
+5.4 Drastically improve readability by using consistent rules in your whitespace which proved significant benefit
 
 ``` javascript
 /* 1a. Blank lines improve readability categorized logically related sections of code
@@ -757,9 +750,11 @@ function bar(baz) {
 }↵  
 ```
 
+[**&#8593; Back to TOC**](#table-of-contents) 
+
 ## 1.6 Strings
 
-i. Use single quotes for strings
+6.1 Use single quotes for strings
 ```javascript
 // a. this is good practice
 const foo = 'I am a good string';
@@ -771,7 +766,7 @@ const bar = "I am a cool string";
 const norf = `I am an awesome string`;
 ```
 
-ii. Best practices when dealing with longer strings
+6.2 Best practices when dealing with longer strings
 ```javascript
 // a. a string with less than 100 chars
 const baz = 'This is a string with less than 100 characters and should be written on 1 line without breaks';
@@ -792,7 +787,7 @@ const badForm = 'This is a string split by new lines' +
                  'readable at all times.';
 ```                 
 
-iii. Use template literals for multi line strings
+6.3 Use template literals for multi line strings
 ```javascript
 // a. this is a good habit to form
 const warningMsg = `If you choose this option you cannot
@@ -810,10 +805,12 @@ const myObj = {
 };
 ```
 
-(iv.) Use template literals for embedding expressions
+6.4 Use template literals for embedding expressions
 ```javascript
 // a. this makes your code more readable
 const a = 100;
 const b = 15;
 console.log(`The sum of 100 and 15 is equal to: ${a + b}`);
 ```
+
+[**&#8593; Back to TOC**](#table-of-contents) 
