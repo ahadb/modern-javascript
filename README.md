@@ -7,22 +7,22 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 
 ## Table of Contents
 
-1. [**JAVASCRIPT ESSENTIALS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)
-  * 1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
-  * 1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
-  * 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-  * 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-  * 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
-  * [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
-  * 1.6 Type Coercion
-  * 1.7 Arrays
-  * 1.8 Objects
-  * 1.9 Destructuring
-  * 1.10 Loops
-  * 1.11 Block Scope vs Lexical Scope
-  * 1.12 Conditionals
-  * 1.13 Linting
-  * 1.14 Testing
+1. [**ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)  
+    1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#variable-declarations)  
+    1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#let-and-const)   
+    1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#gloabal-variables)  
+    1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#coding-and-naming-conventions)  
+    1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#commas-comments-semicolons-and-whitespace)  
+    1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#strings)  
+    1.7 Type Coercion  
+    1.8 Arrays  
+    1.9 Objects  
+    1.10 Destructuring  
+    1.11 Loops  
+    1.12 Block Scope vs Lexical Scope  
+    1.13 Conditionals  
+    1.14 Linting  
+    1.15 Testing  
  
 2. FUNCTIONS
  * IIFE / IIAF
