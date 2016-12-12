@@ -1,6 +1,6 @@
 # Table of Contents
 
-* 1.1 [Variable Declarations](#1.1-variable-declarations)
+* 1.1 [Variable Declarations](#1.1)
 * 1.2 [`let` & `const`](#1.2-let-and-const) 
 * 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
 * 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
