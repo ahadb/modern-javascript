@@ -24,7 +24,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.14 Linting  
     1.15 Testing  
  
-2. FUNCTIONS
+2. FUNCTIONS  
     2.1 IIFE / IIAF  
     2.2 Immediate Object Initialization  
     2.3 Function Invocation  
@@ -36,7 +36,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     2.9 Partial Application  
     2.10 The `this` Keyword  
 
-3. OBJECT CREATION PATTERNS
+3. OBJECT CREATION PATTERNS  
     3.1 Object Literals  
     3.2 Object.create  
     3.3 Factory Pattern  
@@ -44,7 +44,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     3.5 ES5 Constructor Function Pattern  
     3.6 ES6 Class Pattern 
  
-4. DESIGN PATTERNS
+4. DESIGN PATTERNS  
     4.1 Module Pattern  
     4.2 Revealing Module Pattern   
     4.3 Singleton Pattern  
