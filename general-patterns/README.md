@@ -1,26 +1,24 @@
 # Table of Contents
 
-* 1.1 [Variable Declarations](#variable-declarations)
-* 1.2 [`let` & `const`](#1.2-let-and-const) 
-* 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-* 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-* 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
-* 1.6 [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
-* 1.7 Type Coercion
-* 1.8 Arrays
-* 1.9 Objects
-* 1.10 Destructuring
-* 1.11 Loops
-* 1.12 Block Scope vs Lexical Scope
-* 1.13 Conditionals
-* 1.14 Linting
-* 1.15 Testing
+1. [Variable Declarations](#variable-declarations)
+2. [`let` & `const`](#1.2-let-and-const) 
+3. [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
+4. [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
+5. [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
+6. [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
+7. Type Coercion
+8. Arrays
+9. Objects
+10. Destructuring
+11. Loops
+12. Block Scope vs Lexical Scope
+13. Conditionals
+14. Linting
+15. Testing
 
-<a name ="variable-declarations">
-## 1.1 Variable Declarations 
+## Variable Declarations 
 
-
-i. Correct way to declare variables is to prefix them with `var` 
+1.1 Correct way to declare variables is to prefix them with `var` 
 ```javascript
 var foo = 1;
 var bar = foo;
@@ -29,12 +27,12 @@ var norf = {};
 var baz = 'Paris';
 ```
 
-ii. Use const to declare your variables in ES6 
+1.2 Use const to declare your variables in ES6 
 ```javascript
 const foo = 1;
 ```
 
-iii. Group const and let variable together for increased readability
+1.3 Group const and let variable together for increased readability
 ```javascript
 const bar = 2;
 const list = getNames();
@@ -42,12 +40,12 @@ let i;
 let attr = true;
 ```
 
-iv. Never do this, always declare with `var`
+1.4. Never do this, always declare with `var`
 ```javascript
 foo = 100;
 ```
 
-v. Undeclared variables throw errors in strict mode
+1.5. Undeclared variables throw errors in strict mode
 ```javascript
 function foo() {
 	var a = 1;
@@ -55,7 +53,7 @@ function foo() {
 }
 ```
 
-vi. Anti-patterns in ES5 and ES6
+1.6. Anti-patterns in ES5 and ES6
 ```javascript
 const foo  = 10,
 	    bar  = 15,
@@ -63,7 +61,7 @@ const foo  = 10,
 	    norf = false;
 ```	
 
-[&#8593; Back to TOC](#table-of-contents)     
+[**&#8593; Back to TOC**](#table-of-contents)     
 
 ## 1.2 let and const
 
