@@ -25,55 +25,55 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.15 Testing  
  
 2. FUNCTIONS
- * IIFE / IIAF
- * Immediate Object Initialization
- * Function Invocation
- * Returning from Functions
- * Callbacks
- * Closures
- * Higher Order Functions
- * Arrow Functions
- * Partial Application
- * The `this` Keyword
+    2.1 IIFE / IIAF  
+    2.2 Immediate Object Initialization  
+    2.3 Function Invocation  
+    2.4 Returning from Functions  
+    2.5 Callbacks  
+    2.6 Closures  
+    2.7 Higher Order Functions  
+    2.8 Arrow Functions  
+    2.9 Partial Application  
+    2.10 The `this` Keyword  
 
 3. OBJECT CREATION PATTERNS
- * Object Literals
- * Object.create
- * Factory Pattern
- * Prototype Chains
- * ES5 Constructor Function Pattern
- * ES6 Class Pattern
+    3.1 Object Literals  
+    3.2 Object.create  
+    3.3 Factory Pattern  
+    3.4 Prototype Chains  
+    3.5 ES5 Constructor Function Pattern  
+    3.6 ES6 Class Pattern 
  
-5. DESIGN PATTERNS
- * Module Pattern
- * Revealing Module Pattern 
- * Singleton Pattern
- * Pub/Sub Pattern
- * Observer Pattern
- * Decorator Pattern
- * Facade Pattern
+4. DESIGN PATTERNS
+    4.1 Module Pattern  
+    4.2 Revealing Module Pattern   
+    4.3 Singleton Pattern  
+    4.4 Pub/Sub Pattern  
+    4.5 Observer Pattern  
+    4.6 Decorator Pattern  
+    4.7 Facade Pattern  
 
-4. ASYNC PATTERNS
- * Callbacks in Depth
- * Promises
- * Async Generators
- * Async Functions
+5. ASYNC PATTERNS  
+     5.1 Callbacks in Depth  
+     5.2 Promises  
+     5.3 Async Generators  
+     5.4 Async Functions  
  
-6. MODULE CREATION PATTERNS
- * Node & NPM
- * ES6
- * Babel
+6. MODULE CREATION PATTERNS  
+    6.1 Node & NPM    
+    6.2 ES6  
+    6.3 Babel  
  
-7. LIBRARY CREATION PATTERNS
- * Authoring
- * Distribution
+7. LIBRARY CREATION PATTERNS  
+    7.2 Authoring  
+    7.2 Distribution  
 
-8. MORE MODERN-ESQUE / ES6 PATTERNS
- * TypeScript
- * Rest
- * Array Spreads
- * Iterators and Generators
- * Default Parameters
+8. MORE MODERN-ESQUE / ES6 PATTERNS  
+    8.1 TypeScript  
+    8.2 Rest  
+    8.3 Array Spreads  
+    8.4 Iterators and Generators  
+    8.5 Default Parameters  
 
 ## Future of This Project
 In future releases we will also cover Angular (1.x, 2.x) and React patterns. The formula for adding patterns will be determined
@@ -94,7 +94,7 @@ a full blown application so developers can cover a great deal and retain informa
 * [David Walsh](https://davidwalsh.name/)
 * [Medium's JavaScript Collection]()
 * [SitePoint JavaScript](https://www.sitepoint.com/developer-center/javascript-developer-center/)
-* Perfection Kills by Kangax
+* [Perfection Kills by Kangax](http://perfectionkills.com/)
 
 ### Books
 * [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) - Addy Osmani
