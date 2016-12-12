@@ -8,21 +8,21 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 ## Table of Contents
 
 1. [**JAVASCRIPT ESSENTIALS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)
-  * [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
-  * [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
-  * [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-  * [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-  * [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
+  * 1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/variable-declaration.js)
+  * 1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/let-and-const.js) 
+  * 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
+  * 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
+  * 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
   * [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
-  * Type Coercion
-  * Arrays
-  * Objects
-  * Destructuring
-  * Loops
-  * Block Scope vs Lexical Scope
-  * Conditionals
-  * Linting
-  * Testing
+  * 1.6 Type Coercion
+  * 1.7 Arrays
+  * 1.8 Objects
+  * 1.9 Destructuring
+  * 1.10 Loops
+  * 1.11 Block Scope vs Lexical Scope
+  * 1.12 Conditionals
+  * 1.13 Linting
+  * 1.14 Testing
  
 2. FUNCTIONS
  * IIFE / IIAF
