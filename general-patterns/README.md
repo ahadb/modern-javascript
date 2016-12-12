@@ -1,6 +1,6 @@
 # Table of Contents
 
-* 1.1 [Variable Declarations](#1.1)
+* 1.1 [Variable Declarations](#variable-declarations)
 * 1.2 [`let` & `const`](#1.2-let-and-const) 
 * 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
 * 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
@@ -16,7 +16,7 @@
 * 1.14 Linting
 * 1.15 Testing
 
-## 1.1 Variable Declarations
+<a name ="variable-declarations">## 1.1 Variable Declarations
 
 i. Correct way to declare variables is to prefix them with `var` 
 ```javascript
