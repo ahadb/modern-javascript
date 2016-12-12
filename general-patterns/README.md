@@ -1,22 +1,22 @@
-# Table of Contents: JavaScript Essentials
+# Table of Contents
 
-* 1.1 [Variable Declarations](#variable-declarations)
-* 1.2 [`let` & `const`](#let-and-const) 
-* 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-* 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-* 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
-* [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
-* 1.6 Type Coercion
-* 1.7 Arrays
-* 1.8 Objects
-* 1.9 Destructuring
-* 1.10 Loops
-* 1.11 Block Scope vs Lexical Scope
-* 1.12 Conditionals
-* 1.13 Linting
-* 1.14 Testing
+1.1 [Variable Declarations](#1.1-variable-declarations)
+1.2 [`let` & `const`](#1.2-let-and-const) 
+1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
+1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
+1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
+1.6 [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
+1.7 Type Coercion
+1.8 Arrays
+1.9 Objects
+1.10 Destructuring
+1.11 Loops
+1.12 Block Scope vs Lexical Scope
+1.13 Conditionals
+1.14 Linting
+1.15 Testing
 
-## Variable Declarations
+## 1.1 Variable Declarations
 
 i. Correct way to declare variables is to prefix them with `var` 
 ```javascript
@@ -59,9 +59,11 @@ const foo  = 10,
 	    bar  = 15,
 	    baz  = [],
 	    norf = false;
-```	    
+```	
 
-## let and const
+[&#8593; Back to TOC](#table-of-contents)     
+
+## 1.2 let and const
 
 i. Favor const over let in ES6 if you don't need to reassign. const means that the identifier can't be reassigned; in other words using const creates an immutable binding.
 ```javascript
@@ -127,7 +129,10 @@ function tricky() {
 	}
 }
 ```
-## Global Variables
+
+[&#8593; Back to TOC](#table-of-contents) 
+
+## 1.3 Global Variables
     
 Note: It is impossible to avoid global JavaScript, something will always be dangling in the
 global scope. There are many approaches however, from simple to more complex, to not abuse
@@ -325,8 +330,10 @@ const myModule = function () {
 
 console.log(foo); //=> 1 *voila!*
 ```    
+
+[&#8593; Back to TOC](#table-of-contents) 
 	    
-## Coding & Naming Conventions
+## 1.4 Coding & Naming Conventions
 
 i. Be courteous to those who read your code and allow for context in your naming - be descriptive and try to avoid one letter names
 ```javascript
@@ -538,7 +545,10 @@ catch(err) {
   console.log("Input " + err);
 }
 ```
-## Commas, Comments, Semicolons and Whitespace
+
+[&#8593; Back to TOC](#table-of-contents) 
+
+## 1.5 Commas, Comments, Semicolons and Whitespace
 
 i. Use commas before as the last token before line breaks
 ```javascript
@@ -747,7 +757,7 @@ function bar(baz) {
 }↵  
 ```
 
-## Strings
+## 1.6 Strings
 
 i. Use single quotes for strings
 ```javascript
