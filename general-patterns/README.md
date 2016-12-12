@@ -1,20 +1,20 @@
 # Table of Contents
 
-1.1 [Variable Declarations](#1.1-variable-declarations)
-1.2 [`let` & `const`](#1.2-let-and-const) 
-1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
-1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
-1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
-1.6 [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
-1.7 Type Coercion
-1.8 Arrays
-1.9 Objects
-1.10 Destructuring
-1.11 Loops
-1.12 Block Scope vs Lexical Scope
-1.13 Conditionals
-1.14 Linting
-1.15 Testing
+* 1.1 [Variable Declarations](#1.1-variable-declarations)
+* 1.2 [`let` & `const`](#1.2-let-and-const) 
+* 1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/global-variables.js)
+* 1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/coding-and-naming-conventions.js)
+* 1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/commas-comments-semicolons-whitespace.js)
+* 1.6 [Strings](https://github.com/ahadb/javascript-patterns/blob/master/general-patterns/strings.js)
+* 1.7 Type Coercion
+* 1.8 Arrays
+* 1.9 Objects
+* 1.10 Destructuring
+* 1.11 Loops
+* 1.12 Block Scope vs Lexical Scope
+* 1.13 Conditionals
+* 1.14 Linting
+* 1.15 Testing
 
 ## 1.1 Variable Declarations
 
