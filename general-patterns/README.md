@@ -16,8 +16,9 @@
 * 1.14 Linting
 * 1.15 Testing
 
-## 1.1 Variable Declarations 
 <a name ="variable-declarations">
+## 1.1 Variable Declarations 
+
 
 i. Correct way to declare variables is to prefix them with `var` 
 ```javascript
