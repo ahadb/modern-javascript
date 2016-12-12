@@ -63,7 +63,7 @@ const foo  = 10,
 
 [**&#8593; Back to TOC**](#table-of-contents)     
 
-## 1.2 let and const
+## let and const
 
 2.1 Favor const over let in ES6 if you don't need to reassign. const means that the identifier can't be reassigned; in other words using const creates an immutable binding.
 ```javascript
@@ -132,7 +132,7 @@ function tricky() {
 
 [**&#8593; Back to TOC**](#table-of-contents) 
 
-## 1.3 Global Variables
+## Global Variables
     
 > Note: It is impossible to avoid global JavaScript, something will always be dangling in the global scope. There are many approaches however, from simple to more complex, to not abuse global scope - after reading through this section you should already start understanding the power of patterns :/ We'll explore more patterns that minimize globals in classes, and modules
 
@@ -326,7 +326,7 @@ console.log(foo); //=> 1 *voila!*
 
 [**&#8593; Back to TOC**](#table-of-contents)  
 	    
-## 1.4 Coding and Naming Conventions
+## Coding and Naming Conventions
 
 4.1 Be courteous to those who read your code and allow for context in your naming - be descriptive and try to avoid one letter names
 ```javascript
@@ -541,7 +541,7 @@ catch(err) {
 
 [**&#8593; Back to TOC**](#table-of-contents)  
 
-## 1.5 Commas, Comments, Semicolons and Whitespace
+## Commas, Comments, Semicolons and Whitespace
 
 5.1 Use commas before as the last token before line breaks
 ```javascript
@@ -752,7 +752,7 @@ function bar(baz) {
 
 [**&#8593; Back to TOC**](#table-of-contents) 
 
-## 1.6 Strings
+## Strings
 
 6.1 Use single quotes for strings
 ```javascript
