@@ -100,7 +100,7 @@ a full blown application so developers can cover a great deal and retain informa
 * [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) - Addy Osmani
 * [Human JS](http://read.humanjavascript.com/) - Henrik Joreteg
 * [Object Oriented JavaScript](https://www.amazon.com/Object-Oriented-JavaScript-Stoyan-Stefanov-ebook/dp/B0057UNEJC) - Stoyan Stefanov
-* [JavaScript Patterns] Stoyan Stefanov
+* [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do) - Stoyan Stefanov
 * [You Don't Know JS](http://shop.oreilly.com/category/get/kyle-simpson-kit.do) - Kyle Simpson
 * [Eloquent JavaScript](http://eloquentjavascript.net/) - Marijn Haverbeke
 * [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do) - Douglas Crockford
