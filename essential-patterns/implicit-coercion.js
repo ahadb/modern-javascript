@@ -7,7 +7,7 @@
  */
  
 /* (i.) JavaScript can be surprisingly forgiving when it comes to type errors, be wary of this in your applications */
-5 + true; // => 4 
+5 + true; // => 6
 
 /* (ii.) In many cases rather than raising an error JavaScript coerces a value to the expected type by following automatic processes. When you mix numbers and strings, JavaScript breaks in favor of strings */
 5 + "5" // => 55

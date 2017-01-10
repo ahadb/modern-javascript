@@ -6,9 +6,7 @@
 4. [Coding and Naming Conventions](#coding-and-naming-conventions)
 5. [Commas, Comments, Semicolons and Whitespace](#commas-comments-semicolons-and-whitespace)
 6. [Strings](#strings)
-7. Type Coercion
-8. Arrays
-9. Objects
+7. [Implicit Coercion](#implicit-coercion)
 10. Destructuring
 11. Loops
 12. Block Scope vs Lexical Scope
@@ -814,3 +812,25 @@ console.log(`The sum of 100 and 15 is equal to: ${a + b}`);
 ```
 
 [**&#8593; Back to TOC**](#table-of-contents) 
+
+## Implicit Coercion
+
+7.1 JavaScript can be surprisingly forgiving when it comes to type errors, be wary of this in your applications 
+```javascript
+5 + true; // => 6 
+```
+
+7.2 In many cases rather than raising an error JavaScript coerces a value to the expected type by following automatic processes. When you mix numbers and strings, JavaScript breaks in favor of strings 
+```javascript
+5 + "5" // => 55
+"5" + 5 // => 55
+```
+
+7.3 Avoid using '==' with mixed types, this helps the reader to keep clear there is no conversion involved in the comparison
+```javascript
+const today = new Date();
+if (form.month.value === (today.getMonth() + 1) && // strict '==='
+     form.day.value === today.getDate()) { // strict '==='
+       //..do something
+}
+```

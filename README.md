@@ -10,11 +10,11 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 1. [**ESSENTIAL PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)  
     1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#variable-declarations)  
     1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#let-and-const)   
-    1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#gloabal-variables)  
+    1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#global-variables)  
     1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#coding-and-naming-conventions)  
     1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#commas-comments-semicolons-and-whitespace)  
     1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#strings)  
-    1.7 Implicit Coercion  
+    1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#implicit-coercion)  
     1.8 Destructuring  
     1.9 Loops  
     1.10 Block Scope vs Lexical Scope  
