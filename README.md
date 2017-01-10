@@ -14,15 +14,13 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#coding-and-naming-conventions)  
     1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#commas-comments-semicolons-and-whitespace)  
     1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#strings)  
-    1.7 Type Coercion  
-    1.8 Arrays  
-    1.9 Objects  
-    1.10 Destructuring  
-    1.11 Loops  
-    1.12 Block Scope vs Lexical Scope  
-    1.13 Conditionals  
-    1.14 Linting  
-    1.15 Testing  
+    1.7 Implicit Coercion  
+    1.8 Destructuring  
+    1.9 Loops  
+    1.10 Block Scope vs Lexical Scope  
+    1.11 Conditionals  
+    1.12 Linting  
+    1.13 Testing  
  
 2. FUNCTIONS  
     2.1 IIFE / IIAF  

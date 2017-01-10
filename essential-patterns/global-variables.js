@@ -25,7 +25,7 @@ delete foo; //=> returns `false`
 foo = Math.PI;
 bar = [];
 window.x = 10;
-delete foo; // returns `true`
+delete foo; //=> returns `true`
 
 /* (ii.) It's very important to declare your variables, even in functions */
 (function() {
