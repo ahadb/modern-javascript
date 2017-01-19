@@ -14,13 +14,12 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#coding-and-naming-conventions)  
     1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#commas-comments-semicolons-and-whitespace)  
     1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#strings)  
-    1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#implicit-coercion)  
-    1.8 Destructuring  
-    1.9 Loops  
-    1.10 Block Scope vs Lexical Scope  
-    1.11 Conditionals  
-    1.12 Linting  
-    1.13 Testing  
+    1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#implicit-coercion)    
+    1.8 Loops  
+    1.9 Block Scope vs Lexical Scope  
+    1.10 Conditionals  
+    1.11 Linting  
+    1.12 Testing  
  
 2. FUNCTIONS  
     2.1 IIFE / IIAF  
@@ -68,10 +67,11 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 
 8. MORE MODERN-ESQUE / ES6 PATTERNS  
     8.1 TypeScript  
-    8.2 Rest  
-    8.3 Array Spreads  
-    8.4 Iterators and Generators  
-    8.5 Default Parameters  
+    8.2 Rest
+    8.3 Destructuring   
+    8.4 Array Spreads  
+    8.5 Iterators and Generators  
+    8.6 Default Parameters  
 
 ## Future of This Project
 In future releases we will also cover Angular (1.x, 2.x) and React patterns. The formula for adding patterns will be determined
