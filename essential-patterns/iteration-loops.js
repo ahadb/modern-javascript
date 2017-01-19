@@ -19,7 +19,7 @@
  * 1d: statement: statement to execute as long as the condition is truthy
  */
 
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log(i);
     // statements
 }
@@ -28,11 +28,28 @@ for (var i = 0; i < 5; i++) {
 
 // b. little more involved, loop through inputs in form and find empty input
 
-var elements = document.getElementsByTagName("input");
-for (var i = 0; i < elements.length; i++) {
+const elements = document.getElementsByTagName("input");
+for (let i = 0; i < elements.length; i++) {
   if(elements[i].value == "")
     alert('empty');
-      //..do something
+      // ..do something
 }
 
-// c. the best way to loop through an array is using the `for loop`
+// c. the best way to loop through an array is using the `for loop` not `for-in`
+// as we don't want to enumerate over props previously associated to the Object
+
+const myArray = ["xx", "zz"];
+Object.prototype.newMethod = "cc";
+
+// our humble for loop
+for (var i=0; i < myArray.length; i++) {
+  console.log(myArray[i]); // => "aa", "bb"
+}
+
+/* `for in` */
+
+/* `for of` */
+
+/* `do while` */
+
+/* while */
