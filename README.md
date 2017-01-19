@@ -15,7 +15,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#commas-comments-semicolons-and-whitespace)  
     1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#strings)  
     1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#implicit-coercion)    
-    1.8 Loops  
+    1.8 Iteration Statements / Loops  
     1.9 Block Scope vs Lexical Scope  
     1.10 Conditionals  
     1.11 Linting  
