@@ -7,12 +7,11 @@
 5. [Commas, Comments, Semicolons and Whitespace](#commas-comments-semicolons-and-whitespace)
 6. [Strings](#strings)
 7. [Implicit Coercion](#implicit-coercion)
-10. Destructuring
-11. Loops
-12. Block Scope vs Lexical Scope
-13. Conditionals
-14. Linting
-15. Testing
+8. Iteration Statements(#iteration-statements)
+9. Block Scope vs Lexical Scope
+10. Conditionals
+11. Linting
+12. Testing
 
 ## Variable Declarations 
 
@@ -835,7 +834,9 @@ if (form.month.value === (today.getMonth() + 1) && // strict '==='
 }
 ```
 
-## Iteration Statements / Loops
+[**&#8593; Back to TOC**](#table-of-contents) 
+
+## Iteration Statements
 
 > The syntax of a for loop includes the following:
   a: initialization - typically used to initialize a counter variable
