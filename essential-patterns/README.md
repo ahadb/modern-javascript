@@ -7,7 +7,7 @@
 5. [Commas, Comments, Semicolons and Whitespace](#commas-comments-semicolons-and-whitespace)
 6. [Strings](#strings)
 7. [Implicit Coercion](#implicit-coercion)
-8. Iteration Statements(#iteration-statements)
+8. [Iteration Statements](#iteration-statements)
 9. Block Scope vs Lexical Scope
 10. Conditionals
 11. Linting
