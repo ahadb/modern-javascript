@@ -46,7 +46,66 @@ for (var i=0; i < myArray.length; i++) {
   console.log(myArray[i]); // => "aa", "bb"
 }
 
-/* `for in` */
+/* (ii). A for-in statement loops through the props of an enumerable object
+ * The block of code inside the loop will be executed once for each property,
+ * but bear in mind that it will iterated inherited enumerable props via the
+ * property chain.
+ */
+
+const obj = {
+  name: 'Ahad',
+  age: 22,
+  occupation: 'developer'
+};
+
+for (let i in obj) {
+  // ...use with object.hasOwnProperty
+  if (obj.hasOwnProperty(prop)) {
+    // ...do something
+  }
+
+}
+
+// b. one construct can be different from the other. For example:
+
+let a = []; // create a new empty array.
+a[5] = 5;   // perfectly legal JavaScript that resizes the array.
+
+for (let i = 0; i < a.length; i++) {
+  // Iterate over numeric indexes from 0 to 5, as everyone expects.
+  console.log(a[i]);
+}
+
+/* ==>:
+ undefined
+ undefined
+ undefined
+ undefined
+ 5
+ */
+
+// c. now with the same construct using for in:
+
+var a = [];
+a[5] = 5;
+for (var x in a) {
+  // shows only the explicitly set index of "5", and ignores 0-4
+  console.log(x);
+}
+
+/* Will display:
+ 5
+ */
+
+// d. order is not preserved as well as inherited properties will also be
+// enumerated
+
+Array.prototype.last = function () { return this[this.length-1]; };
+
+for (var p in []) {
+  // ...an empty array
+  // ...last will be enumerated
+}
 
 /* `for of` */
 
