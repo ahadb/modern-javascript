@@ -107,7 +107,29 @@ for (var p in []) {
   // ...last will be enumerated
 }
 
-/* `for of` */
+/* (iii). The for...of statement is a native method introduced in ES6 for iterating  * over iterable collections, or objects that have a [Symbol.iterator] property.
+ */
+
+// a. the for..of uses the following syntax:
+
+for (variable of iterable) {
+  //...do something
+}
+
+
+// b. by default objects are not iterables, therefore the for..of doesn't work well in such cases. However for..of works perfectly with arrays and strings
+
+const array = ['a', 'b', 'c', 'd'];
+for (let item of array) {
+  console.log(item)
+}
+// ==> a, b, c, d
+
+const str = 'Ahad Bokhari';
+for (let char of str) {
+  console.log(char)
+}
+// ==> A, h, a, d, ,B, o, k, h, a, r, i
 
 /* `do while` */
 
