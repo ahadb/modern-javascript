@@ -874,10 +874,99 @@ for (var i=0; i < myArray.length; i++) {
 }
 ```
 
-/* `for in` */
+> A for-in statement loops through the props of an enumerable object
+  The block of code inside the loop will be executed once for each property,
+  but bear in mind that it will iterated inherited enumerable props via the
+  property chain.
 
-/* `for of` */
+9.1 A simple construct for a for..in
+
+```javascript
+const obj = {
+  name: 'Ahad',
+  age: 22,
+  occupation: 'developer'
+};
+
+for (let i in obj) {
+  // ...use with object.hasOwnProperty
+  if (obj.hasOwnProperty(prop)) {
+    // ...do something
+  }
+
+}
+```
+
+9.2 One construct can be different from the other. For example:
+```javascript
+let a = []; // create a new empty array.
+a[5] = 5;   // perfectly legal JavaScript that resizes the array.
+
+for (let i = 0; i < a.length; i++) {
+  // Iterate over numeric indexes from 0 to 5, as everyone expects.
+  console.log(a[i]);
+}
+
+/* ==>:
+ undefined
+ undefined
+ undefined
+ undefined
+ 5
+ */
+```
+
+9.3. Now using for in:
+```javascript
+var a = [];
+a[5] = 5;
+for (var x in a) {
+  // shows only the explicitly set index of "5", and ignores 0-4
+  console.log(x);
+}
+
+/* Will display:
+ 5
+ */
+```
+
+9.4 Order is not preserved as well as inherited properties will also be enumerated
+```javascript
+Array.prototype.last = function () { return this[this.length-1]; };
+
+for (var p in []) {
+  // ...an empty array
+  // ...last will be enumerated
+}
+```
+
+> The for...of statement is a native method introduced in ES6 for iterating  * over iterable collections, or objects that have a   
+ [Symbol.iterator] property.
+
+9.5 The for..of uses the following syntax:
+```javascript
+for (variable of iterable) {
+  //...do something
+}
+```
+
+9.6 By default objects are not iterables, therefore the for..of doesn't work well in such cases. However for..of works perfectly with arrays and strings
+```javascript
+const array = ['a', 'b', 'c', 'd'];
+for (let item of array) {
+  console.log(item)
+}
+// ==> a, b, c, d
+
+const str = 'Ahad Bokhari';
+for (let char of str) {
+  console.log(char)
+}
+// ==> A, h, a, d, ,B, o, k, h, a, r, i
+```
 
 /* `do while` */
 
 /* while */
+
+/* for Each */
