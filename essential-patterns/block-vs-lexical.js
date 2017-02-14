@@ -87,7 +87,7 @@ function lettyDoo() {
   console.log(x);  // => 1
 }
 
-// c. More block scoped let
+// c. More block scoped `let` ...
 
 let outer = "outer";
 {
