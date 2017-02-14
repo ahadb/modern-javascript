@@ -86,3 +86,17 @@ function lettyDoo() {
   }
   console.log(x);  // => 1
 }
+
+// c. More block scoped let
+
+let outer = "outer";
+{
+  let inner = "inner";
+  {
+    let nested = "nested"
+  }
+  console.log(inner); // => you can access `inner`
+  console.log(nested) // => throws error
+}
+// you can access `outer` here
+// you cannot access `inner` and `nested` here
