@@ -65,3 +65,24 @@ foo();
 
 console.log(quux);
 // => Reference Error: quux is not defined
+
+// b. Consider the difference between using `var` and `let` when thinking about scoping
+// rules. The main difference is that the scope of var is the entire enclosing function
+
+function varryDoo() {
+  var x = 1;
+  if (true) {
+    var x = 2;  // same variable!
+    console.log(x);  // => 2
+  }
+  console.log(x);  // => 2
+}
+
+function lettyDoo() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // different variable
+    console.log(x);  // => 2
+  }
+  console.log(x);  // => 1
+}
