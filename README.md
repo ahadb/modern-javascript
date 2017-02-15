@@ -67,7 +67,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
 
 8. MORE MODERN-ESQUE / ES6 PATTERNS  
     8.1 TypeScript  
-    8.2 Rest
+    8.2 Rest  
     8.3 Destructuring      
     8.4 Array Spreads  
     8.5 Iterators and Generators  
