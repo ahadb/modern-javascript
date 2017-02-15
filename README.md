@@ -17,7 +17,7 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-patterns#implicit-coercion)    
     1.8 [Iteration Statements / Loops](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#iteration-statements)  
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#scope)  
-    1.10 Conditionals  
+    1.10 Control Flow 
     1.11 Linting  
     1.12 Testing  
  
