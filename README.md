@@ -26,7 +26,7 @@ Listed within this repository will be the following types of patterns:
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#conditionals)  
  
-2. OBJECTS & ARRAY CREATION PATTERNS  
+2. [**OBJECTS & ARRAY CREATION PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
     2.1 Object Literals  
     2.2 Object.create  
     2.3 Factory Pattern  
@@ -46,7 +46,6 @@ Listed within this repository will be the following types of patterns:
     3.9 Partial Application  
     3.10 The `this` Keyword  
 
- 
 4. DESIGN PATTERNS  
     4.1 Module Pattern  
     4.2 Revealing Module Pattern   
@@ -80,9 +79,11 @@ Listed within this repository will be the following types of patterns:
     8.6 Default Parameters  
 
 ## Future of This Project
-In future releases we will also cover Angular (1.x, 2.x) and React patterns. The formula for adding patterns will be determined
-by libraries / frameworks that hold the most market value. Once this repository contains enough information it will be converted into
+In future releases we will also cover Angular (2.x) and React patterns. The formula for adding patterns will be determined
+by libraries / frameworks that hold the most market value. Once this repository contains enough information I'd like it to be converted into
 a full blown application so developers can cover a great deal and retain information in short, but more meaningful bursts.
+
+Perhaps I'll even publish it as a book, who knows - the future sees now boundaries. 
 
 ## Resources
 
