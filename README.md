@@ -1,9 +1,16 @@
 # JavaScript Patterns
-An extensive list of everyday modern JavaScript patterns with syntactical examples in both ES5 and ES6.
+An extensive list of everyday modern JavaScript design and coding patterns (patterns in general, not just design patterns) with syntactical examples in both ES5 and ES6.
 
 ## Introduction
 This repository is a place for pragmatic javascript developers (beginners to advanced) to view and familiarize themselves with modern
-everyday patterns and idioms in vanilla style ES5 & ES6.
+everyday patterns and idioms in vanilla style ES5 & ES6. It is important to define patterns that help us write better code and communicate with each other as developers, managers amd within groups & teams.
+
+Listed within this repository will be the following types of patterns:
+ * Code Patterns
+ * Design Patterns
+ * Modern Patterns
+
+...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters and JavaScript technocrats that came before us outlining important and oftern misunderstood concepts. 
 
 ## Table of Contents
 
@@ -19,25 +26,26 @@ everyday patterns and idioms in vanilla style ES5 & ES6.
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#conditionals)  
  
-2. FUNCTIONS  
-    2.1 IIFE / IIAF  
-    2.2 Immediate Object Initialization  
-    2.3 Function Invocation  
-    2.4 Returning from Functions  
-    2.5 Callbacks  
-    2.6 Closures  
-    2.7 Higher Order Functions  
-    2.8 Arrow Functions  
-    2.9 Partial Application  
-    2.10 The `this` Keyword  
+2. OBJECTS & ARRAY CREATION PATTERNS  
+    2.1 Object Literals  
+    2.2 Object.create  
+    2.3 Factory Pattern  
+    2.4 Prototype Chains  
+    2.5 ES5 Constructor Function Pattern  
+    2.6 ES6 Class Pattern 
 
-3. OBJECT CREATION PATTERNS  
-    3.1 Object Literals  
-    3.2 Object.create  
-    3.3 Factory Pattern  
-    3.4 Prototype Chains  
-    3.5 ES5 Constructor Function Pattern  
-    3.6 ES6 Class Pattern 
+3. FUNCTIONS  
+    3.1 IIFE / IIAF  
+    3.2 Immediate Object Initialization  
+    3.3 Function Invocation  
+    3.4 Returning from Functions  
+    3.5 Callbacks  
+    3.6 Closures  
+    3.7 Higher Order Functions  
+    3.8 Arrow Functions  
+    3.9 Partial Application  
+    3.10 The `this` Keyword  
+
  
 4. DESIGN PATTERNS  
     4.1 Module Pattern  
@@ -88,9 +96,8 @@ a full blown application so developers can cover a great deal and retain informa
 * [Toptal Engineering Blog](https://www.toptal.com/developers/blog)
 * [Ben Alman](http://benalman.com/)
 * [David Walsh](https://davidwalsh.name/)
-* [Medium's JavaScript Collection]()
-* [SitePoint JavaScript](https://www.sitepoint.com/developer-center/javascript-developer-center/)
 * [Perfection Kills by Kangax](http://perfectionkills.com/)
+* [Douglas Crockford JavaScript](http://javascript.crockford.com/)
 
 ### Books
 * [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) - Addy Osmani
