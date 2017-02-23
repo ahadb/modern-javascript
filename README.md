@@ -26,13 +26,13 @@ Listed within this repository will be the following types of patterns:
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#conditionals)  
  
-2. [**OBJECTS & ARRAY CREATION PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
-    2.1 Object Literals  
-    2.2 Object.create  
-    2.3 Factory Pattern  
-    2.4 Prototype Chains  
-    2.5 ES5 Constructor Function Pattern  
-    2.6 ES6 Class Pattern 
+2. [**OBJECTS & ARRAY PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
+    2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns#object-creation)
+    ~~2.2 Object.create~~  
+    ~~2.3 Factory Pattern~~  
+    ~~2.4 Prototype Chains~~  
+    ~~2.5 ES5 Constructor Function Pattern~~  
+    ~~2.6 ES6 Class Pattern~~ 
 
 3. FUNCTIONS  
     3.1 IIFE / IIAF  

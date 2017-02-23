@@ -80,6 +80,8 @@ myObj.newProp = 'New property';
 myObj.fluxProp = 'Flux property';
 myObj.float = 0.2;
 
+console.log(myObj);
+
 /* ==>
  someProp = 'Some other prop';
  Alicia = 'Not Keys?';
