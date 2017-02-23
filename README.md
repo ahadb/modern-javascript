@@ -27,7 +27,7 @@ Listed within this repository will be the following types of patterns:
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-patterns/README.md#conditionals)  
  
 2. [**OBJECTS & ARRAY PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
-    2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns#object-creation)
+    2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns#object-creation)  
     ~~2.2 Object.create~~  
     ~~2.3 Factory Pattern~~  
     ~~2.4 Prototype Chains~~  
