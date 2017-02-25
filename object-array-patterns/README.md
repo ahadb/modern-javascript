@@ -5,11 +5,9 @@
 ## Object Creation 
 
 
-> (i.) JavaScript is designed around objects, a simple design pattern you should know well. An object is a collection of properties, and a property is an association
-  between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects are crucial, if you understand
-  them, then you understand JavaScript
+> (i.) JavaScript is designed around objects, a simple design pattern you should know well. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects are crucial, if you understand them, then you understand JavaScript
 
-2.1 An object is similar to variables, except for the properties associated with and attached to the object
+2.1 An object is similar to variables, except for the properties associated with and attached to the object. Using the `new` object notation is no different than creating a literal except there is initially no property assignment and it's less apparent that you're creating an object in source code.
 ```javascript
 const myObj = new Object();
 
@@ -94,3 +92,5 @@ console.log(myObj);
  */
 
 ```
+
+(ii.)

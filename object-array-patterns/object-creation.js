@@ -13,7 +13,9 @@
  * them, then you understand JavaScript
  */
 
-// a. An object is similar to variables, except for the properties associated with and attached to the object
+// a. An object is similar to variables, except for the properties associated with and attached to the object. Using the `new`
+// object notation is no different than creating a literal except there is initially no property assignment and it's less
+// apparent that you're creating an object in source code.
 
 const myObj = new Object();
 
@@ -91,3 +93,33 @@ console.log(myObj);
  fluxProp = 'Flux property';
  float = 0.2;
  */
+
+/**
+ * In the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
+ * names can be identifiers or strings followed by a colon.
+ */
+
+// a. Creates an empty object
+const myObj = {};
+
+// b. Using the literal notation to create an object of name/vale pairs
+
+const myObject = {
+  stringProp: 'Ahad',
+  numberProp: 100,
+  booleanProp: true
+};
+
+// adding nested objects, arrays, and functions in our literal
+
+const foo = {
+  images: ['thumbs-up.png', 'smile.png', 'globe.png', 'poop.png'],
+  pos: {
+    x: 100,
+    y: 250
+  },
+  onSwap: function() {
+   // ..some code here
+  }
+};
+
