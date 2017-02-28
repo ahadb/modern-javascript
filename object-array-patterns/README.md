@@ -93,4 +93,31 @@ console.log(myObj);
 
 ```
 
-(ii.)
+> (ii.) With the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
+ names can be identifiers or strings followed by a colon. This creates great readability and an easy syntax to create and assign properties in one go.
+
+2.4. Creates an empty object using a literal
+```javascript
+const myObj = {};
+```
+
+2.5. Using the literal notation to create an object of name/vale pairs
+```javascript
+const myObject = {
+  stringProp: 'Ahad',
+  numberProp: 100,
+  booleanProp: true
+};
+
+// adding nested objects, arrays, and functions in our literal
+const foo = {
+  images: ['thumbs-up.png', 'smile.png', 'globe.png', 'poop.png'],
+  pos: {
+    x: 100,
+    y: 250
+  },
+  onSwap: function() {
+   // ..some code here
+  }
+};
+```
