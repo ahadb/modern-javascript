@@ -14,7 +14,7 @@ Listed within this repository will be the following types of patterns:
 
 ## Table of Contents
 
-1. [**CORE PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/general-patterns)  
+1. [**CORE PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns)  
     1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#variable-declarations)  
     1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#let-and-const)   
     1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#global-variables)  
@@ -26,7 +26,7 @@ Listed within this repository will be the following types of patterns:
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#conditionals)  
  
-2. [**OBJECT PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
+2. [**OBJECT PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
     2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns#object-creation)  
     2.2 Object.create  
     2.3 Object Enumeration  
