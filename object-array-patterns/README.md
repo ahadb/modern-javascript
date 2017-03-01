@@ -167,6 +167,7 @@ const Bob = new Human(45, 'male', 'American', 145);
 ```
 
 > (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x     faster than returning an object literal. We'll delve into classes in later chapters
+
 ```javascript
 class Number {
   constructor() {
