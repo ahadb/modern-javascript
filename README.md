@@ -28,11 +28,14 @@ Listed within this repository will be the following types of patterns:
  
 2. [**OBJECTS & ARRAY PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns)  
     2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-array-patterns#object-creation)  
-    ~~2.2 Object.create~~  
-    ~~2.3 Factory Pattern~~  
-    ~~2.4 Prototype Chains~~  
-    ~~2.5 ES5 Constructor Function Pattern~~  
-    ~~2.6 ES6 Class Pattern~~ 
+    2.2 Object.create  
+    2.3 Object Enumeration  
+    2.4 Factory Pattern  
+    2.5 Module Pattern  
+    2.6 Prototype Pattern  
+    2.7 Chaining Pattern  
+    2.8 ES5 Constructor Function Pattern  
+    2.9 ES6 Class Pattern 
 
 3. FUNCTIONS  
     3.1 IIFE / IIAF  
@@ -47,9 +50,9 @@ Listed within this repository will be the following types of patterns:
     3.10 The `this` Keyword  
 
 4. DESIGN PATTERNS  
-    4.1 Module Pattern  
-    4.2 Revealing Module Pattern   
-    4.3 Singleton Pattern  
+    4.1 Singleton  
+    4.2 Factory   
+    4.3 Iterator  
     4.4 Pub/Sub Pattern  
     4.5 Observer Pattern  
     4.6 Decorator Pattern  
@@ -79,11 +82,13 @@ Listed within this repository will be the following types of patterns:
     8.6 Default Parameters  
 
 ## Future of This Project
-In future releases we will also cover Angular (2.x) and React patterns. The formula for adding patterns will be determined
-by libraries / frameworks that hold the most market value. Once this repository contains enough information I'd like it to be converted into
-a full blown application so developers can cover a great deal and retain information in short, but more meaningful bursts.
+In future releases we will also cover Angular (2.x) and React patterns. The formula for adding patterns will be determinedby libraries / frameworks that hold the most market value. Once this repository contains enough information I'd like it to be converted into a full blown application so developers can cover a great deal and retain information in short, but more meaningful bursts.
 
-Perhaps I'll even publish it as a book, who knows - the future sees now boundaries. 
+## Publishing
+When time permits, there will be a version out on Leanpub or Gitbook - it's too early to tell at this point, but the skies the limit.
+
+## Training & Speaking
+If you or your team of developers need hands on training regarding the material covered in this course please reach out to me: [ahadb.com](http://ahadb.com)
 
 ## Resources
 
@@ -92,13 +97,14 @@ Perhaps I'll even publish it as a book, who knows - the future sees now boundari
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Scotch.io JavaScript](https://scotch.io/tag/javascript)
 * [Raganwald by Reginald Braithwaite](http://raganwald.com/)
-* [JavaScript is Sexy](http://javascriptissexy.com/)
+* [Sitepoint](https://www.sitepoint.com/javascript/raw-javascript/)
 * [2@lity by Dr. Axel Rauschmayer](http://www.2ality.com/)
 * [Toptal Engineering Blog](https://www.toptal.com/developers/blog)
 * [Ben Alman](http://benalman.com/)
 * [David Walsh](https://davidwalsh.name/)
 * [Perfection Kills by Kangax](http://perfectionkills.com/)
 * [Douglas Crockford JavaScript](http://javascript.crockford.com/)
+* [Pony Foo](https://ponyfoo.com/)
 
 ### Books
 * [JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) - Addy Osmani

@@ -20,7 +20,6 @@
 const myObj = new Object();
 
 // b. You may assign properties, out of which each will hold a value using dot notation
-
 myObj.age = 12;
 myObj.height = '173cm';
 myObj.color = 'Fair';
@@ -95,7 +94,7 @@ console.log(myObj);
  */
 
 /**
- * In the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
+ * (ii.) In the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
  * names can be identifiers or strings followed by a colon.
  */
 
@@ -122,7 +121,7 @@ const foo = {
 };
 
 /**
- * Alternatively, you can create an object by writing a constructor function, then instantiating the object with `new`
+ * (iii.) Alternatively, you can create an object by writing a constructor function, then instantiating the object with `new`
  */
 
 // a. Use a constructor function for an object that specifies it's name, properties and methods
@@ -162,7 +161,24 @@ function Human(age, gender, ethnicity, weight) {
 const Bob = new Human(45, 'male', 'American', 145);
 
 /**
- * There are other ways to create objects, the above being the most common patterns used. You can create objects as well using the
+ * (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype but is 3x faster than returning a literal
+ */
+
+class Number {
+  constructor() {
+    this.integer = 42;
+    this.pi = 3.14159265;
+    this.float = 9.72;
+  }
+
+  f() {}
+  g() {}
+}
+
+const n = new Number();
+
+/**
+ * (v. )There are other ways to create objects, the above being the most common patterns used. You can create objects as well using the
  * prototype pattern, prototype/constructor combination, or even a Singleton. We will discuss these in depth in the coming chapters
  */
 
@@ -184,3 +200,10 @@ console.log(Ahad);
      __proto__: Object
  */
 
+// prototype / constructor combination
+function Person(name){
+  this.name = name;
+}
+Person.prototype.getName = function(){
+  return this.name
+};
