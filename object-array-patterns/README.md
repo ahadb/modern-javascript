@@ -146,14 +146,14 @@ console.log(Jane);
 */
 ```
 
-> you may create as many instances as you want
+...you may create as many instances as you want
 ```javascript
 const Anna = new Human(20, 'female', 'German');
 const Rita = new Human(12, 'male', 'Polish');
 const Cathy = new Human(60, 'female', 'Iraqi');
 ```
 
-> or define more properties by rewriting the constructor function
+...or define more properties by rewriting the constructor function
 ```javascript
 function Human(age, gender, ethnicity, weight) {
   // note the use of this
@@ -166,7 +166,7 @@ function Human(age, gender, ethnicity, weight) {
 const Bob = new Human(45, 'male', 'American', 145);
 ```
 
-> (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x faster than returning an object literal
+> (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x faster than returning an object literal. We'll delve into classes in later chapters
 ```javascript
 class Number {
   constructor() {
