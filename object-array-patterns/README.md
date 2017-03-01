@@ -121,3 +121,96 @@ const foo = {
   }
 };
 ```
+
+> (iii.) Alternatively, you can create an object by writing a constructor function, then instantiating the object with `new`
+
+2.6 Use a constructor function for an object that specifies it's name, properties and methods
+```javascript
+function Human(age, gender, ethnicity) {
+  // note the use of this
+  this.age = age;
+  this.gender = gender;
+  this.ethnicity = ethnicity;
+}
+
+// now create an instance of it, or `new` it up
+const Jane = new Human(20, 'female', 'German');
+console.log(Jane);
+
+/* ==>
+ Human
+ age: 20
+ ethnicity: "German"
+ gender: "female"
+ __proto__: Object
+*/
+```
+
+> you may create as many instances as you want
+```javascript
+const Anna = new Human(20, 'female', 'German');
+const Rita = new Human(12, 'male', 'Polish');
+const Cathy = new Human(60, 'female', 'Iraqi');
+```
+
+> or define more properties by rewriting the constructor function
+```javascript
+function Human(age, gender, ethnicity, weight) {
+  // note the use of this
+  this.age = age;
+  this.gender = gender;
+  this.ethnicity = ethnicity;
+  this.weight = weight;
+}
+
+const Bob = new Human(45, 'male', 'American', 145);
+```
+
+> (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x faster than returning an object literal
+```javascript
+class Number {
+  constructor() {
+    this.integer = 42;
+    this.pi = 3.14159265;
+    this.float = 9.72;
+  }
+
+  f() {}
+  g() {}
+}
+
+const n = new Number();
+```
+
+> (v. )There are other ways to create objects, the above being the most common patterns used. You can create objects as well using the
+ prototype pattern, prototype/constructor combination, or even a Singleton. We will discuss these in depth in the coming chapters
+
+2.7 prototype pattern
+```javascript
+function Person() {}
+
+Person.prototype.getName = function() {
+  return this.name
+};
+
+var Ahad = new Person();
+console.log(Ahad);
+
+/* ==>
+ Person
+   __proto__: Object
+     constructor: Person()
+     getName: ()
+     __proto__: Object
+ */
+```
+
+2.8 prototype / constructor combination
+```javascript
+function Person(name){
+  this.name = name;
+}
+Person.prototype.getName = function(){
+  return this.name
+};
+```
