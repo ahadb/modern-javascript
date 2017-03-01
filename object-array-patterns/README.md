@@ -166,7 +166,7 @@ function Human(age, gender, ethnicity, weight) {
 const Bob = new Human(45, 'male', 'American', 145);
 ```
 
-> (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x faster than returning an object literal. We'll delve into classes in later chapters
+> (iv.) ES5 brings the new class syntax, which is just syntactic sugar over the prototype. It's worth noting that using classes is 3x     faster than returning an object literal. We'll delve into classes in later chapters
 ```javascript
 class Number {
   constructor() {
@@ -183,7 +183,7 @@ const n = new Number();
 ```
 
 > (v. )There are other ways to create objects, the above being the most common patterns used. You can create objects as well using the
- prototype pattern, prototype/constructor combination, or even a Singleton. We will discuss these in depth in the coming chapters
+  prototype pattern, prototype/constructor combination, or even a Singleton. We will discuss these in depth in the coming chapters
 
 2.7 prototype pattern
 ```javascript
