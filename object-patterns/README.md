@@ -1,7 +1,7 @@
 # Table of Contents
 
 1. [Object Creation](#object-creation)  
-2. Object.create  
+2. [Object.create](#object-create)  
 3. Object Enumeration  
 4. Factory Pattern  
 5. Module Pattern  
@@ -221,7 +221,7 @@ Person.prototype.getName = function(){
   return this.name
 };
 ```
-## `object.create`
+## Object Create
 
 /**
 > (i.) Using object.create is another way to create a new object and specify prototype object and properties. It is similar to using new, but
@@ -317,10 +317,9 @@ console.log(danielle);         // => { name: 'Fiona' }
 console.log(danielle.species); // => human
 ```
 
-/**
- * (ii.) object.create and classical single inheritance
- */
 
+> (ii.) Using object.create and classical single inheritance
+```javascript
 // Shape - superclass
 function Shape() {
   this.x = 0;
@@ -348,3 +347,4 @@ var rect = new Rectangle();
 console.log('Is rect an instance of Rectangle?', rect instanceof Rectangle); // => true
 console.log('Is rect an instance of Shape?', rect instanceof Shape); // => true
 rect.move(1, 1); // => Outputs, 'Shape moved.'
+```
