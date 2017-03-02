@@ -319,6 +319,7 @@ console.log(danielle.species); // => human
 
 
 > (ii.) Using object.create and classical single inheritance
+
 ```javascript
 // Shape - superclass
 function Shape() {
