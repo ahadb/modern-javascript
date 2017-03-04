@@ -1,7 +1,7 @@
 # Table of Contents
 
 1. [Object Creation](#object-creation)  
-2. [Object.create](#object-create)  
+2. [Object.create](#object-create) `object.create`
 3. Object Enumeration  
 4. Factory Pattern  
 5. Module Pattern  
