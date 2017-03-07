@@ -349,3 +349,107 @@ console.log('Is rect an instance of Rectangle?', rect instanceof Rectangle); // 
 console.log('Is rect an instance of Shape?', rect instanceof Shape); // => true
 rect.move(1, 1); // => Outputs, 'Shape moved.'
 ```
+## Object Enumeration
+
+## Object Factory Pattern
+
+> (i). In JavaScript, any function can return a new object. When it’s not a constructor function or class, it’s called a factory       
+  function
+
+4.1. simple example below
+```javascript
+const proto = {
+  walk() {
+    console.log('Baby steps');
+  }
+};
+
+function factoryWalk() {
+  return Object.create(proto);
+}
+
+const baby1 = factoryWalk();
+console.log(baby1.walk());
+
+/* ==>
+ Object
+ __proto__:
+ walk
+ __proto__: Object
+ */
+```
+
+4.2 we can then compose factories to build arbitrary yet complex objects, lets define some factories first
+
+```javascript
+function makeSauce() {
+  return {
+    type: 'sauce',
+    ingredients: ['wine', 'oregano', 'salt', 'pepper', 'tomatoes'],
+    amount: 1
+  };
+}
+
+function makePasta() {
+  return {
+    type: 'al dente',
+    amount: 2,
+    duration: 10
+  }
+}
+
+function makeSpaghetti() {
+  return {
+    time: 30,
+    type: 'meal',
+    serving: [
+      makeSauce(),
+      makePasta()
+    ]
+  }
+}
+
+// finally, we mimic inheritance with the idea of composition
+function createLasagne() {
+  return {
+    type: 'lasagne',
+    items: [
+      makeSauce(),
+      makePasta(),
+      makeMeat()
+    ],
+    topping: makeCheese()
+  }
+}
+```
+
+> (ii). Factories have many benefits, some of which are there are no refactoring worries, no ambiguity
+  about using `new` and you can expect `this` to behave.
+
+```javascript
+const ComputerMaker = {
+  Processor(chip) {
+    return Object.create(this.chip[chip]);
+  },
+
+  chip: {
+    premium: {
+      shutDown () {
+        console.log('Goodnight');
+      },
+      getOptions: function () {
+        return ['graphics card', 'case', 'motherboard'];
+      }
+    }
+  }
+};
+
+// a. The factory expects:
+const newPuter = ComputerMaker.Processor('Intel');
+newPuter.shutDown(); // => 'Goodnight'
+
+// b. Note: since it's a library, don't make the mistake of calling with `new`, this is the b
+const oldPuter = new ComputerMaker.Processor();
+// / => ** throws error **
+// TypeError: Cannot read property 'undefined' of undefined at new ComputerMaker.Processor()
+```
