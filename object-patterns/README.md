@@ -3,7 +3,7 @@
 1. [Object Creation](#object-creation)  
 2. [Object.create](#object-create) / `object.create`
 3. Object Enumeration  
-4. Factory Pattern  
+4. [Factory Pattern[(#object-factory-pattern)
 5. Module Pattern  
 6. Prototype Pattern  
 7. Chaining Pattern  
