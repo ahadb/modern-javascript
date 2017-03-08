@@ -8,8 +8,9 @@
  */
 
 /**
- * (i). In JavaScript, any function can return a new object. When it’s not a constructor function or class,
- * it’s called a factory function
+ * (i). In JavaScript, any function can return a new object. When it’s not a constructor function or
+ * class, it’s called a factory function - the basis for factory creatiion is the notion of creating
+ * objects without using a constructor
  */
 
 // a. simple example below
