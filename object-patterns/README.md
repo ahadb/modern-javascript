@@ -4,7 +4,7 @@
 2. [Object.create](#object-create) / `object.create`
 3. Object Enumeration  
 4. [Factory Pattern](#object-factory-pattern)
-5. NameSpace Pattern  
+5. [NameSpace Pattern](#namespace-pattern)  
 6. Module Pattern
 7. Chaining Pattern  
 8. ES5 Constructor Function Pattern  
@@ -351,7 +351,7 @@ rect.move(1, 1); // => Outputs, 'Shape moved.'
 ```
 ## Object Enumeration
 
-## Object Factory Pattern
+## Factory Pattern
 
 > (i). In JavaScript, any function can return a new object. When it’s not a constructor function or class, it’s called a factory       
   function
@@ -452,4 +452,88 @@ newPuter.shutDown(); // => 'Goodnight'
 const oldPuter = new ComputerMaker.Processor();
 // / => ** throws error **
 // TypeError: Cannot read property 'undefined' of undefined at new ComputerMaker.Processor()
+```
+## NameSpace Pattern
+
+> (i). Namespaces can be found in most large JS applications. Unless you're working with a  script or snip, it's important that you ensure that your implementation of namespacing is correct as it's not so easy to grasp. You will also avoid third party code clobbering your own code. Let's examine some of the patterns here:
+
+5.1 The simplest namespace you can create is:
+```javascript
+let myNameSpace = {
+  prop: 1,
+
+  foo: function() {
+    console.log(this.prop);
+  },
+
+  bar: function(num) {
+    return num * 2;
+  }
+};
+```
+
+5.2 A little more elegant way so that you might avoid naming collisions would be this
+```javascript
+let someNameSpace = someNameSpace || {};
+someNameSpace.prop = 1;
+someNameSpace.foo = function() { return this.prop };
+someNameSpace.bar = function() { return num * 2 };
+```
+
+5.3 You can now create a single global object for your application so that all your functions and variables become props
+```javascript
+// on your global object
+let MYAPP = {};
+
+// constructors
+MYAPP.Human = function () {};
+MYAPP.Mammal = function () {};
+
+// a variable
+MYAPP.random_var = 1;
+
+// an object container
+MYAPP.modules = {};
+
+// nested objects
+MYAPP.modules.mod1 = {};
+MYAPP.modules.mod1.data = {a: 100, b: 212};
+MYAPP.modules.mod2 = {};
+```
+
+5.4 A proficient and clever developer always checks for other variable and namespaces that might clobber your code
+```javascript
+let MYAPP = MYAPP || {};
+if(!MYAPP) MYAPP = {};
+let MYAPP = MYAPP = MYAPP || {};
+MYAPP || (MYAPP = {});
+let MYAPP = MYAPP === undefined ? {} : MYAPP;
+```
+
+5.5 We are using object literal notations which assist in organizing code and paramaters. Note that there is a huge amount variations in how different developers use their object literals for organizing and structuring their code
+```javascript
+var wonderfulApp = {
+  myConfig: function(){ /**/ },
+  defaults: {
+    enableGeolocation: true,
+    enableSharing: false,
+    maxPhotos: 20
+  },
+  theme: {
+    skin: 'a',
+    toolbars: {
+      index: 'ui-navigation-toolbar',
+      pages: 'ui-custom-toolbar'
+    }
+  },
+  models : {},
+  views : {
+    // we can nest deeper if we wish
+    pages : {
+      page: 1,
+      content: {}
+    }
+  },
+  collections : {}
+};
 ```

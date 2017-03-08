@@ -31,7 +31,7 @@ Listed within this repository will be the following types of patterns:
     2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-create)  
     2.3 Object Enumeration  
     2.4 [Object Factory Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-factory-pattern)  
-    2.5 NameSpace Pattern 
+    2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#namespace-pattern)   
     2.6 Module Pattern    
     2.7 Chaining Pattern  
     2.8 ES5 Constructor Function Pattern  
