@@ -4,8 +4,8 @@
 2. [Object.create](#object-create) / `object.create`
 3. Object Enumeration  
 4. [Factory Pattern](#object-factory-pattern)
-5. Module Pattern  
-6. Prototype Pattern  
+5. NameSpace Pattern  
+6. Module Pattern
 7. Chaining Pattern  
 8. ES5 Constructor Function Pattern  
 9. ES6 Class Pattern 
