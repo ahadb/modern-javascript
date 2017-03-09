@@ -537,3 +537,38 @@ var wonderfulApp = {
   collections : {}
 };
 ```
+
+> (ii). Let's move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
+
+```javascript
+let myNamespace = (function () {
+
+  // defined within the local scope
+  var privateMethod1 = function () { /* ... */ };
+  var privateMethod2 = function () { /* ... */ };
+  var privateProperty1 = 'Private Prop1';
+
+  return {
+    // the object literal returned here can have as many
+    // nested depths as you wish, however as mentioned,
+    // this way of doing things works best for smaller,
+    // limited-scope applications
+    publicMethod1: privateMethod1,
+
+    // nested namespace with public properties
+    properties:{
+      publicProperty1: privateProperty1
+    },
+
+    // another nested namespace
+    utils:{
+      publicMethod2: privateMethod2
+    },
+
+    views: {
+      publicMethod2: privateMethod1
+    }
+
+  }
+})();
+```
