@@ -34,7 +34,7 @@ someNameSpace.bar = function() { return num * 2 };
 
 // c. you can now create a single global object for your application so that all your functions and variables become props
 // on your global object
-let MYAPP = {};
+let MYAPP = MYAPP || {};
 
 // constructors
 MYAPP.Human = function () {};
@@ -51,7 +51,7 @@ MYAPP.modules.mod1 = {};
 MYAPP.modules.mod1.data = {a: 100, b: 212};
 MYAPP.modules.mod2 = {};
 
-// d. Options to check for other variable and namespaces that might clobber your code
+// d. A proficient and clever developer will always check for other variables and namespaces that might clobber your code
 let MYAPP = MYAPP || {};
 if(!MYAPP) MYAPP = {};
 let MYAPP = MYAPP = MYAPP || {};

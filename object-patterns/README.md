@@ -483,7 +483,7 @@ someNameSpace.bar = function() { return num * 2 };
 5.3 You can now create a single global object for your application so that all your functions and variables become props
 ```javascript
 // on your global object
-let MYAPP = {};
+let MYAPP = MYAPP || {};
 
 // constructors
 MYAPP.Human = function () {};
@@ -501,7 +501,7 @@ MYAPP.modules.mod1.data = {a: 100, b: 212};
 MYAPP.modules.mod2 = {};
 ```
 
-5.4 A proficient and clever developer always checks for other variable and namespaces that might clobber your code
+5.4 A proficient and clever developer always checks for other variables and namespaces that might clobber your code
 ```javascript
 let MYAPP = MYAPP || {};
 if(!MYAPP) MYAPP = {};
@@ -537,6 +537,7 @@ var wonderfulApp = {
   collections : {}
 };
 ```
+<<<<<<< HEAD
 
 > (ii). Let's move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
 
