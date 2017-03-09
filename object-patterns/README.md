@@ -537,7 +537,6 @@ var wonderfulApp = {
   collections : {}
 };
 ```
-<<<<<<< HEAD
 
 > (ii). Let's move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
 
