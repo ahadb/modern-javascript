@@ -544,9 +544,9 @@ var wonderfulApp = {
 let myNamespace = (function () {
 
   // defined within the local scope
-  var privateMethod1 = function () { /* ... */ };
-  var privateMethod2 = function () { /* ... */ };
-  var privateProperty1 = 'Private Prop1';
+  let privateMethod1 = function () { /* ... */ };
+  let privateMethod2 = function () { /* ... */ };
+  let privateProperty1 = 'Private Prop1';
 
   return {
     // the object literal returned here can have as many
