@@ -580,6 +580,7 @@ MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
   pattern, just remember namespaces can be thought of as self contained modules
   as well (namespaces were popularized in the JS world before modules were)
   
+// a. namespace in which you expose the interface of your choice  
 ```javascript
 let myNamespace = (function () {
 
@@ -610,4 +611,49 @@ let myNamespace = (function () {
 
   }
 })();
+```
+
+// b. Another example with more complexity and two more paramaters. We also 
+// have the ability this namespace quite easily
+
+```javascript
+(function( omlette, $, undefined ) {
+  // private Property
+  var isYummy = true;
+
+  // public Property
+  omlette.ingredient = "Eggs";
+
+  // public Method
+  omlette.fry = function() {
+    var vegetableOil;
+
+    addItem("\t\n Butter \n\t");
+    addItem(vegetableOil);
+    console.log("Frying " + omlette.ingredient);
+  };
+
+  // private Method
+  function addItem( item ) {
+    if ( item !== undefined ) {
+      console.log("Adding " + $.trim(item));
+    }
+  }
+}( window.omlette = window.omlette || {}, jQuery ));
+```
+
+// c. we can now add new functionality to the omlette
+```javascript
+(function( omlette, $, undefined ) {
+  // private Property
+  var amountOfGrease = "1 Cup";
+
+  // public Method
+  omlette.toString = function() {
+    console.log( omlette.quantity + " " +
+      omlette.ingredient + " & " +
+      amountOfGrease + " of Grease" );
+    console.log( isHot ? "Hot" : "Cold" );
+  };
+}( window.omlette = window.omlette || {}, jQuery ));
 ```
