@@ -538,21 +538,60 @@ var wonderfulApp = {
 };
 ```
 
-> (ii). Let's move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
+> (ii). Before we start combining IIFE's, object literals and function to achieve more complexity let's take a peak at YAHOO's namespacing logic to declare namespaces. This method is actually stand-alone and can easily be adapted to your application. Just find and replace "YAHOO" with your application's base namespace and you'll have something like MyOrg.namespace.
 
+```javascript
+// a. YAHOO's namespace declaration technique:
+if (!YAHOO) {
+  var YAHOO = {};
+}
+
+YAHOO.namespace = function () {
+  var a = arguments,
+    o = null,
+    i, j, d;
+  for (i = 0; i < a.length; i = i + 1) {
+    d = ("" + a[i]).split(".");
+    o = YAHOO;
+    for (j = (d[0] == "YAHOO") ? 1 : 0; j < d.length; j = j + 1) {
+      o[d[j]] = o[d[j]] || {};
+      o = o[d[j]];
+    }
+  }
+  return o;
+};
+
+// use it
+YAHOO.namespace("MyNamespace.UI.Controls")
+
+MyNamespace.UI.Controls.MyClass = function(){};
+MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
+```
+
+> (iii). Now we move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
+
+// a. The problem with object literals is that anyone can access their methods
+// and properties, and they can grow to be quite complex syntactically. To 
+// overcome limitations the following example returns an object literal but 
+// gives you the control to provide whatever interface you want for others. 
+// This relies on a closure and an IIFE as a core structure.
+
+> Note: in the next few examples we will be fusing examples with the module 
+  pattern, just remember namespaces can be thought of as self contained modules
+  as well (namespaces were popularized in the JS world before modules were)
+  
 ```javascript
 let myNamespace = (function () {
 
   // defined within the local scope
-  let privateMethod1 = function () { /* ... */ };
-  let privateMethod2 = function () { /* ... */ };
-  let privateProperty1 = 'Private Prop1';
+  var privateMethod1 = function () { /* ... */ };
+  var privateMethod2 = function () { /* ... */ };
+  var privateProperty1 = 'Private Prop1';
 
   return {
-    // the object literal returned here can have as many
-    // nested depths as you wish, however as mentioned,
-    // this way of doing things works best for smaller,
-    // limited-scope applications
+    // nest as much as you would like here,
+    // however note that this works best for
+    // smaller applications with limited scope
     publicMethod1: privateMethod1,
 
     // nested namespace with public properties

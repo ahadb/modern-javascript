@@ -61,7 +61,7 @@ let MYAPP = MYAPP === undefined ? {} : MYAPP;
 // e. We are using object literal notations which assist in organizing code and paramaters. Note that there is a huge amount
 // variations in how different developers use their object literals for organizing and structuring their code
 
-var wonderfulApp = {
+let wonderfulApp = {
   myConfig: function(){ /**/ },
   defaults: {
     enableGeolocation: true,
