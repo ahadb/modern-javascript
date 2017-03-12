@@ -161,7 +161,7 @@ let myNamespace = (function () {
 })();
 
 // b. Another example with more complexity and two more paramaters. We also have the
-// ability this namespace quite easily
+// ability to add to this namespace quite easily
 (function( omlette, $, undefined ) {
   // private Property
   var isYummy = true;
@@ -186,7 +186,7 @@ let myNamespace = (function () {
   }
 }( window.omlette = window.omlette || {}, jQuery ));
 
-// adding new Functionality to the omlette
+// adding new functionality to the omlette
 (function( omlette, $, undefined ) {
   // private Property
   var amountOfGrease = "1 Cup";

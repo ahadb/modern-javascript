@@ -580,7 +580,7 @@ MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
   pattern, just remember namespaces can be thought of as self contained modules
   as well (namespaces were popularized in the JS world before modules were)
   
-// a. namespace in which you expose the interface of your choice  
+3.1 namespace in which you expose the interface of your choice  
 ```javascript
 let myNamespace = (function () {
 
@@ -613,9 +613,8 @@ let myNamespace = (function () {
 })();
 ```
 
-// b. Another example with more complexity and two more paramaters. We also 
-// have the ability this namespace quite easily
-
+3.2 Another example with more complexity and two more paramaters. We also 
+have the ability this namespace quite easily
 ```javascript
 (function( omlette, $, undefined ) {
   // private Property
@@ -642,7 +641,7 @@ let myNamespace = (function () {
 }( window.omlette = window.omlette || {}, jQuery ));
 ```
 
-// c. we can now add new functionality to the omlette
+3.3 we can now add new functionality to the omlette
 ```javascript
 (function( omlette, $, undefined ) {
   // private Property
