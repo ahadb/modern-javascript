@@ -576,7 +576,7 @@ MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
   relies on a closure and an IIFE as a core construct.
 ```javascript 
 var iife = (function() {
-  var prop: 1;
+  var prop = 1;
   var someFn = function(idx) {
     console.log(idx);
   };
@@ -587,7 +587,7 @@ var iife = (function() {
     publicProp: prop,
     exposedFn: someFn
   };         
-}();  
+})();  
 ```  
 
 > Note: in the next few examples we will be fusing examples with the module 
