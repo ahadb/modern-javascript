@@ -334,14 +334,11 @@ var defineProp = function (obj, key, value){
   };
   Object.defineProperty(obj, key, config);
 };
-
 var car = Object.create(Object.prototype);
- 
 // Populate the object with properties
 defineProp(car, "car", "Ferrari");
 defineProp(car, "engine", "V12");
 defineProp(car, "year", "2015");
- 
 console.log(car);
 // Outputs: Object {car: "Ferrari", engine: "V12", year: 2015}
 ```
