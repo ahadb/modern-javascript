@@ -323,6 +323,29 @@ Object
  */
 ```
 
+> Note: using what we learnt eariler with Object.defineProperty / ies we could also use Object.create to do something like this:
+```javascript
+var defineProp = function (obj, key, value){
+  var config = {
+    value: value,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  };
+  Object.defineProperty(obj, key, config);
+};
+
+var car = Object.create(Object.prototype);
+ 
+// Populate the object with properties
+defineProp(car, "car", "Ferrari");
+defineProp(car, "engine", "V12");
+defineProp(car, "year", "2015");
+ 
+console.log(car);
+// Outputs: Object {car: "Ferrari", engine: "V12", year: 2015}
+```
+
 2.3 Finally we're eeking out the benefits of using object.create, the second argument to object.create let's you initialize object properties
 ```javascript
 const userA = {
