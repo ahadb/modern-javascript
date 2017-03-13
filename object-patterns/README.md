@@ -570,15 +570,28 @@ MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
 
 > (iii). Now we move onto combining a namespace with an IIFE with public and private properties. We return an interface for other developers to use as well as returning an object literal
 
-// a. The problem with object literals is that anyone can access their methods
-// and properties, and they can grow to be quite complex syntactically. To 
-// overcome limitations the following example returns an object literal but 
-// gives you the control to provide whatever interface you want for others. 
-// This relies on a closure and an IIFE as a core structure.
+> Tip: The problem with object literals is that anyone can access their methods
+  and properties, and they can grow to be quite complex syntactically. To 
+  overcome limitations the following example returns an object literal and
+  relies on a closure and an IIFE as a core construct.
+```javascript 
+var iife = (function() {
+  var prop: 1;
+  var someFn = function(idx) {
+    console.log(idx);
+  };
+  var anotherFn = function(x) {
+    return x * 12;
+  }; 
+  return {
+    publicProp: prop,
+    exposedFn: someFn
+  };         
+}();  
+```  
 
 > Note: in the next few examples we will be fusing examples with the module 
-  pattern, just remember namespaces can be thought of as self contained modules
-  as well (namespaces were popularized in the JS world before modules were)
+  pattern, just remember namespaces can be thought of as self contained modules as well (namespaces were popularized in the JS world before modules were)
   
 3.1 namespace in which you expose the interface of your choice  
 ```javascript
