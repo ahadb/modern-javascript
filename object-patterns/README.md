@@ -221,6 +221,7 @@ Person.prototype.getName = function(){
 };
 ```
 > (vi.) Using Object.defineProperty and Object.defineProperties to create objects should not be overlooked - this is only ECMAScript 5     compatible while the above approaches are ECMAScript 3 and 5 compatiable
+
 ```javascript
 var o = {};
 o.prop1 = 1;
