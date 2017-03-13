@@ -5,7 +5,7 @@
 3. Object Enumeration  
 4. [Factory Pattern](#object-factory-pattern)
 5. [NameSpace Pattern](#namespace-pattern)  
-6. Module Pattern
+6. [Module Pattern](#module-pattern)
 7. Chaining Pattern  
 8. ES5 Constructor Function Pattern  
 9. ES6 Class Pattern 
@@ -668,4 +668,15 @@ have the ability this namespace quite easily
     console.log( isHot ? "Hot" : "Cold" );
   };
 }( window.omlette = window.omlette || {}, jQuery ));
+```
+
+## Module Pattern
+
+> To understand what a Module is, you’ll need to understand what an IIFE
+  can do for you and how it's constructed
+
+```javascript
+(function() {
+  // ...code here
+})();
 ```

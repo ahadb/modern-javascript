@@ -7,3 +7,12 @@
  * license: MIT
  */
 
+/*
+ * To understand what a Module is, you’ll need to understand what an IIFE
+ * can do for you and how it's constructed
+ */
+
+(function() {
+  // ...code here
+})();
+
