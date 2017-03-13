@@ -96,7 +96,6 @@ console.log(myObj);
  fluxProp = 'Flux property';
  float = 0.2;
  */
-
 ```
 
 > (ii.) With the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
@@ -221,6 +220,54 @@ Person.prototype.getName = function(){
   return this.name
 };
 ```
+> (vi.) Using Object.defineProperty and Object.defineProperties to create objects should not be overlooked - this is only ECMAScript 5     compatible while the above approaches are ECMAScript 3 and 5 compatiable
+```javascript
+var o = {};
+o.prop1 = 1;
+o['prop2'] = 2;
+o['someFn'] = function() {};
+```
+
+1.9 Set properties
+```javascript
+Object.defineProperty(o, "newKey", {
+    value: "mutating object and adding greater control",
+    writable: true,
+    enumerable: false,
+    configurable: true
+});
+```
+
+1.10 A short-hand could be written as follows
+```javascript
+var defineProp = function (obj, key, value){
+  var config = {
+    value: value,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  };
+  Object.defineProperty( obj, key, config );
+};
+```
+
+1.11 Object.defineProperties
+```javascript
+Object.defineProperties(o, {
+ 
+  "someKey": {
+    value: "Objects are awesome!",
+    writable: true
+  },
+ 
+  "anotherKey": {
+    value: "Quux",
+    writable: false
+  }
+ 
+});
+```
+
 ## Object Create
 
 /**
