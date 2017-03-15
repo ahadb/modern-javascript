@@ -69,14 +69,14 @@ var aModule = (function() {
 //. c. Perhaps a more readable variation could look like this
 var Module = (function () {
 
-  // locally scoped Object
+  // locally scoped
   var myObject = {};
 
-  // declared with `var`, must be "private"
+  // if it's declared with var, then it's private
   var privateMethod = function () {};
 
   myObject.someMethod = function () {
-    // take it away Mr. Public Method
+    // a public method
   };
 
   return myObject;
