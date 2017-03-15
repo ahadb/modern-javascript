@@ -207,3 +207,47 @@ function Person(name){
 Person.prototype.getName = function(){
   return this.name
 };
+
+/**
+ * (vi.) Using Object.defineProperty and Object.defineProperties to create objects should not be overlooked - this is only ECMAScript 5 compatible while the above
+ * approaches are ECMAScript 3 and 5 compatiable
+ */
+
+var o = {};
+o.prop1 = 1;
+o['prop2'] = 2;
+o['someFn'] = function() {};
+
+// Set properties
+Object.defineProperty(o, "newKey", {
+    value: "mutating object and adding greater control",
+    writable: true,
+    enumerable: false,
+    configurable: true
+});
+ 
+// A short-hand could be written as follows
+var defineProp = function (obj, key, value){
+  var config = {
+    value: value,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  };
+  Object.defineProperty( obj, key, config );
+};
+
+// Object.defineProperties
+Object.defineProperties(o, {
+ 
+  "someKey": {
+    value: "Objects are awesome!",
+    writable: true
+  },
+ 
+  "anotherKey": {
+    value: "Quux",
+    writable: false
+  }
+ 
+});

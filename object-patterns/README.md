@@ -96,7 +96,6 @@ console.log(myObj);
  fluxProp = 'Flux property';
  float = 0.2;
  */
-
 ```
 
 > (ii.) With the object literal notation, an object description is a set of comma-separated name/value pairs inside curly braces. The
@@ -221,6 +220,55 @@ Person.prototype.getName = function(){
   return this.name
 };
 ```
+> (vi.) Using Object.defineProperty and Object.defineProperties to create objects should not be overlooked - this is only ECMAScript 5     compatible while the above approaches are ECMAScript 3 and 5 compatiable
+
+```javascript
+var o = {};
+o.prop1 = 1;
+o['prop2'] = 2;
+o['someFn'] = function() {};
+```
+
+1.9 Set properties
+```javascript
+Object.defineProperty(o, "newKey", {
+    value: "mutating object and adding greater control",
+    writable: true,
+    enumerable: false,
+    configurable: true
+});
+```
+
+1.10 A short-hand could be written as follows
+```javascript
+var defineProp = function (obj, key, value){
+  var config = {
+    value: value,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  };
+  Object.defineProperty( obj, key, config );
+};
+```
+
+1.11 Object.defineProperties
+```javascript
+Object.defineProperties(o, {
+ 
+  "someKey": {
+    value: "Objects are awesome!",
+    writable: true
+  },
+ 
+  "anotherKey": {
+    value: "Quux",
+    writable: false
+  }
+ 
+});
+```
+
 ## Object Create
 
 /**
@@ -273,6 +321,26 @@ Object
   > set bar: (v)
   __proto__: Object
  */
+```
+
+> Note: using what we learnt eariler with Object.defineProperty / ies we could also use Object.create to do something like this:
+```javascript
+var defineProp = function (obj, key, value){
+  var config = {
+    value: value,
+    writable: true,
+    enumerable: true,
+    configurable: true
+  };
+  Object.defineProperty(obj, key, config);
+};
+var car = Object.create(Object.prototype);
+// Populate the object with properties
+defineProp(car, "car", "Ferrari");
+defineProp(car, "engine", "V12");
+defineProp(car, "year", "2015");
+console.log(car);
+// Outputs: Object {car: "Ferrari", engine: "V12", year: 2015}
 ```
 
 2.3 Finally we're eeking out the benefits of using object.create, the second argument to object.create let's you initialize object properties
@@ -576,7 +644,7 @@ MyNamespace.UI.Controls.MyClass.prototype.someFunction = function(){};
   relies on a closure and an IIFE as a core construct.
 ```javascript 
 var iife = (function() {
-  var prop: 1;
+  var prop = 1;
   var someFn = function(idx) {
     console.log(idx);
   };
@@ -587,7 +655,7 @@ var iife = (function() {
     publicProp: prop,
     exposedFn: someFn
   };         
-}();  
+})();  
 ```  
 
 > Note: in the next few examples we will be fusing examples with the module 
