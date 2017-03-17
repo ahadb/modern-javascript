@@ -23,6 +23,61 @@ var myModule = (function(idx) {
   // ...code here
 })();
 
+// c. Create a basic module
+var myModule = {
+
+  myProp: "my prop",
+
+  objProp: 'obj prop',
+
+  // settings object with just properties...
+  mySettings: {
+    useHMR: true,
+    cacheData: 'server',
+    isProp: this.myProp ? this.myProp : this.objProp
+  },
+
+  // a simple method
+  basicMethod: function () {
+    console.log('I\'m a simple method within a module');
+  },
+
+  // use our setting object
+  settingsMethod: function () {
+    console.log( "Caching is: " + (this.mySettings.useHMR ? 'true' : 'false') );
+  },
+
+  // override the current configuration
+  updateMySettings: function(newSettings) {
+
+    if ( typeof newSettings === "object" ) {
+      this.mySettings = newSettings;
+      console.log(this.mySettings.language);
+    }
+  }
+};
+
+myModule.myProp
+// => 'my prop'
+
+myModule.basicMethod();
+// => 'I'm a simple method within a module'
+
+myModule.updateMySettings({ useMHR: false, cacheData: 'client', isProp: null });
+// => Object {useMHR: false, cacheData: "client", isProp: null}
+
+myModule
+/*
+ Object
+   basicMethod: ()
+   myProp: "my prop"
+   mySettings: Object
+   objProp: "obj prop"
+   settingsMethod: ()
+   updateMySettings: (newSettings)
+   __proto__: Object
+ */
+
 /*
  * (ii.) Modules in JavaScript are used to create private and public encapsulation of classes - those
  * seen in conventional programming languages. the module pattern internalizes state and keeps code shielded
@@ -69,7 +124,7 @@ var aModule = (function() {
 //. c. Perhaps a more readable variation could look like this
 var Module = (function () {
 
-  // locally scoped Object
+  // notice, the locally scoped Object
   var myObject = {};
 
   // declared with `var`, must be "private"
