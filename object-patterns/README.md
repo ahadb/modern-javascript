@@ -661,7 +661,7 @@ var iife = (function() {
 > Note: in the next few examples we will be fusing examples with the module 
   pattern, just remember namespaces can be thought of as self contained modules as well (namespaces were popularized in the JS world before modules were)
   
-3.1 namespace in which you expose the interface of your choice  
+5.1 namespace in which you expose the interface of your choice  
 ```javascript
 let myNamespace = (function () {
 
@@ -694,8 +694,7 @@ let myNamespace = (function () {
 })();
 ```
 
-3.2 Another example with more complexity and two more paramaters. We also 
-have the ability this namespace quite easily
+5.2 Another example with more complexity and two more paramaters. We also have the ability this namespace quite easily
 ```javascript
 (function( omlette, $, undefined ) {
   // private Property
@@ -722,7 +721,7 @@ have the ability this namespace quite easily
 }( window.omlette = window.omlette || {}, jQuery ));
 ```
 
-3.3 we can now add new functionality to the omlette
+5.3 we can now add new functionality to the omlette
 ```javascript
 (function( omlette, $, undefined ) {
   // private Property
@@ -740,11 +739,130 @@ have the ability this namespace quite easily
 
 ## Module Pattern
 
-> To understand what a Module is, you’ll need to understand what an IIFE
-  can do for you and how it's constructed
+> To understand what a Module is, you’ll need to understand what an IIFE can do for you and how it's constructed
+
+6.1 Simple iife, or immediately invoked functional expression
 
 ```javascript
 (function() {
   // ...code here
+})();
+```
+
+6.2 Create a namespace for our code or anonymous module
+
+```javascript
+var myModule = (function(idx) {
+  idx.indexOf(idx);
+  // ...code here
+})();
+```
+
+6.3 Create a basic module
+
+```javascript
+var myModule = {
+
+  myProp: "my prop",
+
+  objProp: 'obj prop',
+
+  // settings object with just properties...
+  mySettings: {
+    useHMR: true,
+    cacheData: 'server',
+    isProp: this.myProp ? this.myProp : this.objProp
+  },
+
+  // a simple method
+  basicMethod: function () {
+    console.log('I\'m a simple method within a module');
+  },
+
+  // use our setting object
+  settingsMethod: function () {
+    console.log( "Caching is: " + (this.mySettings.useHMR ? 'true' : 'false') );
+  },
+
+  // override the current configuration
+  updateMySettings: function(newSettings) {
+
+    if ( typeof newSettings === "object" ) {
+      this.mySettings = newSettings;
+      console.log(this.mySettings.language);
+    }
+  }
+};
+
+myModule.myProp
+// => 'my prop'
+
+myModule.basicMethod();
+// => 'I'm a simple method within a module'
+
+myModule.updateMySettings({ useMHR: false, cacheData: 'client', isProp: null });
+// => Object {useMHR: false, cacheData: "client", isProp: null}
+
+myModule
+/*
+ Object
+   basicMethod: ()
+   myProp: "my prop"
+   mySettings: Object
+   objProp: "obj prop"
+   settingsMethod: ()
+   updateMySettings: (newSettings)
+   __proto__: Object
+ */
+```
+
+
+> (ii.) Modules in JavaScript are used to create private and public encapsulation of classes - those seen in conventional programming languages. the module pattern internalizes state and keeps code shielded from the global scope, and potentially other libraries and variables that can collide with it.
+
+6.4 So, to mimic a private method or property one has to only do this
+
+```javascript
+var aModule = (function() {
+  var privateProp = 'Private Property';
+  var privateMethod = function() {
+    console.log('I\'m a private method');
+  }
+})();
+```
+
+6.5 Now we simply use the `return` statement to return an object literal to which we bind the methods we want to expose to the namespace. It's that simple
+
+```javascript
+var aModule = (function() {
+  var privateProp = 'Private Property';
+  var privateMethod = function() {
+    console.log('I\'m a private method');
+  };
+
+  // the return statement
+  return {
+    privateProp: privateProp,
+    privateMethod: privateMethod
+  }
+})();
+```
+
+6.6 Perhaps a more readable variation could look like this
+
+```javascript
+var Module = (function () {
+
+  // notice, the locally scoped Object
+  var myObject = {};
+
+  // if it's declared with var, then it's private
+  var privateMethod = function () {};
+
+  myObject.someMethod = function () {
+    // a public method
+  };
+
+  return myObject;
+
 })();
 ```

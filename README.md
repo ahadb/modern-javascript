@@ -3,14 +3,17 @@ An extensive list of everyday modern JavaScript design and coding patterns (patt
 
 ## Introduction
 This repository is a place for pragmatic javascript developers (beginners to advanced) to view and familiarize themselves with modern
-everyday patterns and idioms in vanilla style ES5 & ES6. It is important to define patterns that help us write better code and communicate with each other as developers, managers amd within groups & teams.
+everyday patterns and idioms in vanilla style ES5 & ES6. The great majority of patterns are found here are very useful and common, while others might not be as popular. There are no silver bullets, so please don't try and force your problem to fit a pattern or tool.
+
+I hope you find that this repo will help you think to quickly recognize even the trivial of patterns - most of all I hope you find invaluable inspiration and satisfaction as you work through the examples. For novices, you'll gain the most if you revisit them after you've gained some experience.
 
 Listed within this repository will be the following types of patterns:
- * Code Patterns
+ * General Code Patterns
  * Design Patterns
- * Modern Patterns
+ * Modern Patterns (ES6, Node)
+ * Refactoring Patterns
 
-...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters and JavaScript technocrats that came before us outlining important and oftern misunderstood concepts. 
+...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters, JavaScript technocrats, and technology pundits that came before us outlining important and often misunderstood concepts. 
 
 ## Table of Contents
 
