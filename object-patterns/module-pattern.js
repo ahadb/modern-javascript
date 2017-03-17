@@ -127,11 +127,11 @@ var Module = (function () {
   // notice, the locally scoped Object
   var myObject = {};
 
-  // declared with `var`, must be "private"
+  // if it's declared with var, then it's private
   var privateMethod = function () {};
 
   myObject.someMethod = function () {
-    // take it away Mr. Public Method
+    // a public method
   };
 
   return myObject;
