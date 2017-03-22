@@ -781,7 +781,7 @@ var myModule = {
 
   // use our setting object
   settingsMethod: function () {
-    console.log( "Caching is: " + (this.mySettings.useHMR ? 'true' : 'false') );
+    console.log("Caching is: " + (this.mySettings.useHMR ? 'true' : 'false'));
   },
 
   // override the current configuration
