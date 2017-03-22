@@ -866,3 +866,89 @@ var Module = (function () {
 
 })();
 ```
+
+> Modules can also be augmented, or mutated as per the developers will. What if wanted to extend the module
+ we just created, well we could by doing the following.
+
+// 6.7 We define our base module
+```javascript
+var myModFoo = (function() {
+
+  var privateMethod = function() {
+    // private
+  };
+
+  var somePublicMethod = function() {
+    // public
+  };
+
+  var anotherMethod = function() {
+    // public
+  };
+
+  return {
+    publicMethodBar: somePublicMethod,
+    publicMethodFoo: anotherMethod
+  };
+
+})();
+
+/*
+ Object
+   publicMethodBar: ()
+   publicMethodFoo: ()
+   __proto__: Object
+ */
+```
+
+6.8 We can then extend our module if we wanted to
+```javascript
+var myModBar = (function (myModFoo) {
+
+  myModFoo.extendedFn = function () {
+    // new method!
+  };
+
+  return myModFoo;
+
+})(myModFoo || {});
+
+/*
+ Object
+   extendedFn: ()
+   publicMethodBar: ()
+   publicMethodFoo: ()
+    __proto__: Object
+ */
+```
+
+6.9 Delightful, isn't it? We can also pass in globals as arguments to our module
+// Global module
+```javascript
+var myMixedModule = (function ($, _) {
+
+  var cart = [];
+
+  var privateMethod1 = function () {
+    $('.container').html('jQuery test');
+  };
+
+  var privateMethod2 = function() {
+    console.log(_.flatten([1, [2, [3, [4]], 5]]);
+  };
+
+  return {
+    publicMethod: privateMethod1,
+
+    addToCart: function(values) {
+      cart.push(values);
+    },
+
+    getCartLength: function() {
+      return cart.length;
+    }
+  };
+
+// Pull in jQuery and Lodash
+})($, _);
+```
