@@ -37,7 +37,7 @@ Listed within this repository will be the following types of patterns:
     2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#namespace-pattern)   
     2.6 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#module-pattern)    
     2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#chaining-pattern)  
-    2.8 ES5 Constructor Function Pattern  
+    2.8 [ES5 Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#es5-constructor-function-pattern)
     2.9 ES6 Class Pattern   
 
 3. ARRAY PATTERNS  
