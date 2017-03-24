@@ -7,8 +7,9 @@
 5. [NameSpace Pattern](#namespace-pattern)  
 6. [Module Pattern](#module-pattern)
 7. [Chaining Pattern](#chaining-pattern)  
-8. ES5 Constructor Function Pattern  
-9. ES6 Class Pattern 
+8. Constructor Function Pattern  
+9. Prototype Pattern   
+10. Class Pattern  
 
 ## Object Creation 
 

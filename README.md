@@ -29,7 +29,7 @@ Listed within this repository will be the following types of patterns:
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#conditionals)  
  
-2. [**OBJECT PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
+2. [**CORE JS OBJECT CREATION & DESIGN PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
     2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-creation)  
     2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-create)  
     2.3 Object Enumeration  
@@ -37,41 +37,41 @@ Listed within this repository will be the following types of patterns:
     2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#namespace-pattern)   
     2.6 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#module-pattern)    
     2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#chaining-pattern)  
-    2.8 ES5 Constructor Function Pattern  
-    2.9 ES6 Class Pattern   
+    2.8 Constructor Function Pattern  
+    2.9 Prototype Pattern   
+    2.10 Class Pattern  
 
-3. ARRAY PATTERNS  
-    3.1 Array Creation   
-    3.2 Array Enumeration  
-    3.3 Array Methods  
-    3.4 Functional Arrays     
+3. JAVASCRIPT DESIGN PATTERNS  
+    3.1 Singleton Pattern  
+    3.2 Iterator Pattern    
+    3.3 Pub/Sub Pattern  
+    3.4 Observer Pattern  
+    3.5 Decorator Pattern  
+    3.6 Facade Pattern 
+       
+4. ARRAY PATTERNS  
+    4.1 Array Creation     
+    4.2 Array Enumeration  
+    4.3 Array Methods  
+    4.4 Functional Arrays       
    
-4. FUNCTION PATTERNS  
-    4.1 IIFE / IIAF  
-    4.2 Immediate Object Initialization  
-    4.3 Function Invocation  
-    4.4 Returning from Functions  
-    4.5 Callbacks  
-    4.6 Closures  
-    4.7 Higher Order Functions  
-    4.8 Arrow Functions  
-    4.9 Partial Application  
-    4.10 The `this` Keyword  
-
-5. DESIGN PATTERNS  
-    5.1 Singleton  
-    5.2 Factory   
-    5.3 Iterator  
-    5.4 Pub/Sub Pattern  
-    5.5 Observer Pattern  
-    5.6 Decorator Pattern  
-    5.7 Facade Pattern  
+5. FUNCTION PATTERNS  
+    5.1 IIFE / IIAF  
+    5.2 Immediate Object Initialization    
+    5.3 Function Invocation  
+    5.4 Returning from Functions  
+    5.5 Callbacks  
+    5.6 Closures  
+    5.7 Higher Order Functions  
+    5.8 Arrow Functions  
+    5.9 Partial Application  
+    5.10 The `this` Keyword  
 
 6. ASYNC PATTERNS  
-     6.1 Callbacks in Depth  
-     6.2 Promises  
-     6.3 Async Generators  
-     6.4 Async Functions  
+    6.1 Callbacks in Depth  
+    6.2 Promises  
+    6.3 Async Generators  
+    6.4 Async Functions  
  
 7. MODULE CREATION PATTERNS  
     7.1 Node & NPM    
