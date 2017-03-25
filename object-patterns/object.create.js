@@ -1,5 +1,5 @@
 /**
- * CH. 02 - Object Patterns
+ * CH. 02 - Core JavaScript Object Creation & Design Patterns
  * object.create
  *
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
