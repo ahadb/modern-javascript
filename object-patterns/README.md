@@ -1078,9 +1078,9 @@ function MeasureSuccess(education, skills, ambition) {
 
 8.2 When the code new measureSuccess is executed:
 > * A new object is created, inheriting from MeasureSuccess.prototype.
-  * The constructor function MeasureSuccess is called with the specified arguments, and with this bound to the newly
-  created object.
-  * The object returned by the constructor function becomes the result of the whole new expression
+> * The constructor function MeasureSuccess is called with the specified arguments, and with this bound to the newly
+> created object.
+> * The object returned by the constructor function becomes the result of the whole new expression
 ```javascript  
 const amy = new MeasureSuccess(8, 9, 9);
 console.log(amy);
