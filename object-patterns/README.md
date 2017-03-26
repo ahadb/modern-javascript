@@ -7,8 +7,8 @@
 5. [NameSpace Pattern](#namespace-pattern)  
 6. [Module Pattern](#module-pattern)
 7. [Chaining Pattern](#chaining-pattern)  
-8. Constructor Function Pattern  
-9. Prototype Pattern   
+8. [Constructor Function Pattern](#constructor-function-pattern)  
+9. [Prototype Pattern](#prototype-pattern)   
 10. Class Pattern  
 
 ## Object Creation 
