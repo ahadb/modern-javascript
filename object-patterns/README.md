@@ -1119,3 +1119,46 @@ function MeasureSuccess(education, skills, ambition) {
   return this;
 }
 ```
+
+8.4 If you want to avoid this altogether and not worry about setting context, you could use this pattern
+```javascript
+function Person(firstName, lastName) {
+  let _firstName = firstName;
+  let _lastName = lastName;
+
+  let me = {
+    firstName: _firstName,
+    lastName: _lastName
+  };
+
+  me.fullName = function() {
+    return _firstName + ' ' + _lastName;
+  };
+
+  // Getter/setters
+  me.firstName = function(value) {
+    if (!arguments.length) return _firstName;
+    _firstName = value;
+
+    return me;
+  };
+
+  me.lastName = function(value) {
+    if (!arguments.length) return _lastName;
+    _lastName = value;
+
+    return me;
+  };
+
+  return me;
+}
+
+// Use it like this, with no `new` keyword!
+var zack = Person('Zack', 'Leeberman');
+
+zack.firstName('Todd');
+zack.lastName('Bradfield');
+
+zack.fullName();
+// => 'Todd Bradfield'
+```
