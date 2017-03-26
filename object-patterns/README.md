@@ -1053,4 +1053,69 @@ new Dog()
   .sendToApi();
 ```
 
-## ES5 Constructor Function Pattern
+## Constructor Function Pattern
+
+> (i). In JavaScript we're particularly interested in objects, as everything is an object. This
+  is unlike most traditional languages as constructors are special methods within classes. the
+  most common way to create an object using a constructor, pass it arguments and set values is
+  to use the this keyword with new
+
+8.1 Below is the standard constructor function pattern
+```javascript
+function MeasureSuccess(education, skills, ambition) {
+  // args are numbered ratings of self from 1 to 10
+  this.education = education;
+  this.skills = skills;
+  this.ambition = ambition;
+  this.median = this.education + this.skills + this.ambition;
+  this.result = this.median > 22 ? 'good' : 'bad';
+
+  this.isSuccessful = function() {
+    return 'My success rating is: ' + this.median + ' which is' + ' ' + this.result;
+  };
+}
+```
+
+8.2 When the code new measureSuccess is executed:
+> * A new object is created, inheriting from MeasureSuccess.prototype.
+  * The constructor function MeasureSuccess is called with the specified arguments, and with this bound to the newly
+  created object.
+  * The object returned by the constructor function becomes the result of the whole new expression
+```javascript  
+const amy = new MeasureSuccess(8, 9, 9);
+console.log(amy);
+/*
+ MeasureSuccess
+   ambition: 9
+   education: 8
+   isSuccessful: ()
+   median: 26
+   result: "good"
+   skills: 9
+   __proto__: Object
+ */
+amy.isSuccessful();
+// => "My success rating is: 26 which is good"
+```
+
+8.3 It's common for JavaScript developers to forget the new operator. What can we if we call the constructor but accidentally forget the new keyword
+```javascript
+function MeasureSuccess(education, skills, ambition) {
+  // we change our constructor to allow instance creation with and without `new`
+  if (!(this instanceof MeasureSuccess)) {
+    return new MeasureSuccess(education, skills, ambition);
+  }
+  // args are numbered ratings of self from 1 to 10
+  this.education = education;
+  this.skills = skills;
+  this.ambition = ambition;
+  this.median = this.education + this.skills + this.ambition;
+  this.result = this.median > 22 ? 'good' : 'bad';
+
+  this.isSuccessful = function() {
+    return 'My success rating is: ' + this.median + ' which is' + ' ' + this.result;
+  };
+
+  return this;
+}
+```
