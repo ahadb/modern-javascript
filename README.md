@@ -78,12 +78,17 @@ Listed within this repository will be the following types of patterns:
     7.2 ES6  
     7.3 Babel  
  
-8. LIBRARY CREATION PATTERNS  
-    8.2 Authoring  
-    8.2 Distribution  
+8. MODERN JAVASCRIPT PATTERNS 
+    8.2 Higher Order Functions  
+    8.2 Imperative vs. Declarative Programming  
+    8.3 Higher Order Functions  
+    8.4 Functional Programming  
+    8.5 Pure Functions, Impure Functions and Side Effects  
+    8.6 Stateful and Stateless  
+    8.7 Immutability and Mutability
 
-9. MORE MODERN-ESQUE / ES6 PATTERNS  
-    9.1 TypeScript  
+9. ES6 PATTERNS  
+    9.1 Arrow Functions  
     9.2 Rest  
     9.3 Destructuring      
     9.4 Array Spreads  
