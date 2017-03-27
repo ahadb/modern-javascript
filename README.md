@@ -78,7 +78,7 @@ Listed within this repository will be the following types of patterns:
     7.2 ES6  
     7.3 Babel  
  
-8. MODERN JAVASCRIPT PATTERNS 
+8. MODERN JAVASCRIPT PATTERNS   
     8.2 Higher Order Functions  
     8.2 Imperative vs. Declarative Programming  
     8.3 Higher Order Functions  
