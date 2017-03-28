@@ -1162,3 +1162,6 @@ zack.lastName('Bradfield');
 zack.fullName();
 // => 'Todd Bradfield'
 ```
+
+## Prototype Pattern
+

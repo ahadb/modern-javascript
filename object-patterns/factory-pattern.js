@@ -1,6 +1,6 @@
 /**
- * CH. 03 - Object Patterns
- * Factory Pattern
+ * CH. 02 - Core JavaScript Object Creation & Design Patterns
+ * Factory Creation
  *
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
  * @copyright 2016 - 2017, Ahad Bokhari
