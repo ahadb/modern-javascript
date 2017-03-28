@@ -1,6 +1,6 @@
 /**
  * CH. 02 - Core JavaScript Object Creation & Design Patterns
- * Factory Creation
+ * Prototype Pattern
  *
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
  * @copyright 2016 - 2017, Ahad Bokhari
@@ -78,3 +78,33 @@ var testObj = new MyObject();
 testObj.someFunction(); //=> 'Some function'
 testObj.someOtherFunction(); //=> 'Some other function'
 testObj.showMyName(); // alerts "Testing showMyName()"
+
+// d. It's worth noting that it's possible to implement the prototype pattern without
+// directly using object.create
+
+var humanPrototype = {
+  init: function (religion) {
+    this.religion = religion;
+  },
+
+  getReligion: function () {
+    console.log("The religion of this person is " + " " + this.religion);
+  }
+};
+
+
+function person(religion) {
+
+  function R() {}
+  R.prototype = humanPrototype;
+
+  var r = new R();
+
+  r.init(religion);
+  return r;
+
+}
+
+var ayesha = person("Muslim");
+ayesha.getReligion();
+//=> "The religion of this person is Muslim"
