@@ -19,7 +19,7 @@ Listed within this repository will be the following types of patterns:
 
 1. [**CORE PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns)  
     1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#variable-declarations)  
-    1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#let-and-const)   
+    <span style="color: #a61717; background-color: #e3d2d2;">1.2</span> [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#let-and-const)   
     1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#global-variables)  
     1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#coding-and-naming-conventions)  
     1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#commas-comments-semicolons-and-whitespace)  
