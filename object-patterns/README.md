@@ -9,7 +9,7 @@
 7. [Chaining Pattern](#chaining-pattern)  
 8. [Constructor Function Pattern](#constructor-function-pattern)  
 9. [Prototype Pattern](#prototype-pattern)   
-10. Class Pattern  
+10. [Class Pattern](#class-pattern)  
 
 ## Object Creation 
 
@@ -1269,3 +1269,4 @@ ayesha.getReligion();
 //=> "The religion of this person is Muslim"
 ```
 
+## Class Pattern

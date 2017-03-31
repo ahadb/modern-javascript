@@ -39,7 +39,7 @@ Listed within this repository will be the following types of patterns:
     2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#chaining-pattern)  
     2.8 [Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#es5-constructor-function-pattern)    
     2.9 [Prototype Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#prototype-pattern)     
-    2.10 Class Pattern  
+    2.10 [Class Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#class-pattern)  
 
 3. JAVASCRIPT DESIGN PATTERNS  
     3.1 Singleton Pattern  
