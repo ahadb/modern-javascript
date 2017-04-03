@@ -102,7 +102,7 @@ function Person(firstName, lastName) {
 }
 
 // Use it like this, with no `new` keyword!
-var zack = Person('Zack', 'Leeberman');
+var zack = Person('Zack', 'Lieberman');
 
 zack.firstName('Todd');
 zack.lastName('Bradfield');
