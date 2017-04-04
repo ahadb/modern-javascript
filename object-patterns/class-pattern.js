@@ -27,3 +27,39 @@ const f = new Foo();
  * Class Expressions
  */
 
+// a. Class declarations are a typical way to define a class
+class Life {
+  constructor(food, water, oxygen) {
+    this.food = food;
+    this.water = water;
+    this.oxygen = oxygen;
+  }
+}
+
+// b. Note: You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError
+const dot = new Point();
+
+class Point {}
+
+// c: Another way to define a class is by a Class expression which can be named or unnamed - they suffer from the same hoisting problems as their counterparts
+
+// unnamed
+const Square = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+
+// named
+const Square = class Square {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+
+/* (iii). The anatomy of a class is where the fun begins -  we have the tradional lingo like base
+ * classes, sub classes, static, constructor, super and of course prototype methods within the body of * our  classes
+ */
+
