@@ -59,7 +59,61 @@ const Square = class Square {
   }
 };
 
-/* (iii). The anatomy of a class is where the fun begins -  we have the tradional lingo like base
- * classes, sub classes, static, constructor, super and of course prototype methods within the body of * our  classes
+/* (iii). The anatomy of a class is where the excitement starts -  we have the traditional lingo like
+ * base classes, sub classes, static, constructor, super and of course prototype methods within the
+ * body of our classes. Let's begin with our constructor and some basic methods
  */
 
+// a. Defining a simple class in ES6
+class EasyDate {
+
+  // Define our constructor, which is the function that defines our class
+  constructor(day, month, year) {
+
+    // If so, initialize with "this"
+    this._day = day;
+    this._month = month;
+    this._year = year;
+  }
+
+  // add some basic methods
+
+  addDays(nDays) {
+    // Increment "this" date by n days
+  }
+
+  getDay() {
+    return this._day;
+  }
+}
+
+// "today" is guaranteed to be valid and fully initialized
+let monday = new EasyDate(2000, 2, 28);
+
+// Manipulating data only through a fixed set of functions ensures we maintain valid state
+monday.addDays(1);
+
+// b. Note: Get and set allows us to run code on the reading or writing of a property. ES6 brings us
+// syntax that ES5 didn't concerning getters and setters. You can simple use `get` and `set` //
+// respectively
+
+class Person {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(newName) {
+    this._name = newName;   // validation could be checked here such as only allowing non numerical values
+  }
+
+  walk() {
+    console.log(this._name + ' is walking.');
+  }
+}
+
+let bob = new Person('Bob');
+console.log(bob.name);  // Outputs 'BOB'
