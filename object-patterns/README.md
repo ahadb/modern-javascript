@@ -1334,7 +1334,7 @@ const Square = class Square {
   base classes, sub classes, static, constructor, super and of course prototype methods within the
   body of our classes. Let's begin with our constructor and some basic methods
 
-11.4 Defining a simple class in ES6
+11.1 Defining a simple class in ES6
 ```javascript
 class EasyDate {
 
@@ -1365,9 +1365,9 @@ let monday = new EasyDate(2000, 2, 28);
 monday.addDays(1);
 ```
 
-> Note: Get and set allows us to run code on the reading or writing of a property. ES6 brings us
-  syntax that ES5 didn't concerning getters and setters. You can simple use `get` and `set` //
-  respectively
+11.2 Note: Get and set allows us to run code on the reading or writing of a property. ES6 brings us
+syntax that ES5 didn't concerning getters and setters. You can simple use `get` and `set` //
+respectively
 ```javascript
 class Person {
   constructor(name) {
