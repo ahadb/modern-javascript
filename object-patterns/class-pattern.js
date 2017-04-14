@@ -118,6 +118,9 @@ class Person {
 let bob = new Person('Bob');
 console.log(bob.name);  // Outputs 'BOB'
 
+
+// c. demonstrate static here
+
 /* (iii). Inheritance via sub classing let's you extend a base class's constructor. The actual keyword
  * `extends` is used to create a subclass of a base class
  */
@@ -159,3 +162,20 @@ class Foo {
   }
 }
 console.log(new Foo() instanceof Foo); // => false
+
+/* (iv). You might want to return Array objects in your derived array class MyArray. The species
+ * pattern lets you override default constructors.
+ */
+
+class MyArray extends Array {
+  // Overwrite species to the parent Array constructor
+  static get [Symbol.species]() { return Array; }
+}
+
+var a = new MyArray(1,2,3);
+var mapped = a.map(x => x * x);
+
+console.log(mapped instanceof MyArray); // => false
+console.log(mapped instanceof Array);   // => true
+
+
