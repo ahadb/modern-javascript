@@ -10,8 +10,8 @@ I hope you find that this repo will help you think to quickly recognize even the
 Listed within this repository will be the following types of patterns:
  * General Code Patterns
  * Design Patterns
- * Modern Patterns (ES6, Node)
- * Refactoring Patterns
+ * Modern Patterns (ES6, Functional)
+ * Select Framework Patterns
 
 ...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters, JavaScript technocrats, and technology pundits that came before us outlining important and often misunderstood concepts. 
 
@@ -50,7 +50,7 @@ Listed within this repository will be the following types of patterns:
     3.6 Facade Pattern 
        
 4. ARRAY PATTERNS  
-    4.1 Array Creation     
+    4.1 [Array Creation](https://github.com/ahadb/javascript-patterns/blob/master/array-patterns/array-creation.js)       
     4.2 Array Enumeration  
     4.3 Array Methods  
     4.4 Functional Arrays       
