@@ -94,7 +94,7 @@ let monday = new EasyDate(2000, 2, 28);
 monday.addDays(1);
 
 // b. Note: Get and set allows us to run code on the reading or writing of a property. ES6 brings us
-// syntax that ES5 didn't concerning getters and setters. You can simple use `get` and `set` //
+// syntax that ES5 didn't concerning getters and setters. You can simple use `get` and `set`
 // respectively
 
 class Person {
@@ -117,3 +117,45 @@ class Person {
 
 let bob = new Person('Bob');
 console.log(bob.name);  // Outputs 'BOB'
+
+/* (iii). Inheritance via sub classing let's you extend a base class's constructor. The actual keyword
+ * `extends` is used to create a subclass of a base class
+ */
+
+// a. Create a base class
+class Foo {
+  constructor(foo, norf) {
+    this.foo = foo;
+    this.norf = norf;
+  }
+  toUpperCase() {
+    return `${this.foo.toUpperCase()}, ${this.norf.toUpperCase()}`;
+  }
+}
+
+// b. create a subclass
+class Bar extends Foo {
+  constructor(foo, norf, bar ) {
+    // must call super before you use this in subclass
+    super(foo, norf);
+    this.bar = bar;
+  }
+  toUpperCase() {
+    return super.toUpperCase() + ' in ' + this.bar;
+  }
+}
+
+const bar = new Bar('foo', 'norf', 'bar');
+bar.toUpperCase();
+// => 'FOO', 'NORF' in 'bar'
+
+bar instanceof Foo; // => true
+bar instanceof Bar; // => true
+
+// c. You can override the result of a constructor by explicitly returning an object:
+class Foo {
+  constructor() {
+    return Object.create(null);
+  }
+}
+console.log(new Foo() instanceof Foo); // => false
