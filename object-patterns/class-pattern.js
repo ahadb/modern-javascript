@@ -118,10 +118,7 @@ class Person {
 let bob = new Person('Bob');
 console.log(bob.name);  // Outputs 'BOB'
 
-
-// c. demonstrate static here
-
-/* (iii). Inheritance via sub classing let's you extend a base class's constructor. The actual keyword
+/* (iv). Inheritance via sub classing let's you extend a base class's constructor. The actual keyword
  * `extends` is used to create a subclass of a base class
  */
 
@@ -163,7 +160,7 @@ class Foo {
 }
 console.log(new Foo() instanceof Foo); // => false
 
-/* (iv). You might want to return Array objects in your derived array class MyArray. The species
+/* (v). You might want to return Array objects in your derived array class MyArray. The species
  * pattern lets you override default constructors.
  */
 
@@ -178,7 +175,7 @@ var mapped = a.map(x => x * x);
 console.log(mapped instanceof MyArray); // => false
 console.log(mapped instanceof Array);   // => true
 
-/* (v). ES5 patterns brought us numerous ways to keep our data private, let's take a look at how we
+/* (vi). ES5 patterns brought us numerous ways to keep our data private, let's take a look at how we
  * we can do the same in ES6 classes. There is no way to natively do this, in either ES5 or ES6. We c
  * can accomplish this however by using using specific patterns. None is wholly superior might I add.
  */

@@ -1390,3 +1390,132 @@ class Person {
 let bob = new Person('Bob');
 console.log(bob.name);  // Outputs 'BOB'
 ```
+
+> (iv). Inheritance via sub classing let's you extend a base class's constructor. The actual keyword
+  `extends` is used to create a subclass of a base class
+
+12.1 Create a base class
+```javascript
+class Foo {
+  constructor(foo, norf) {
+    this.foo = foo;
+    this.norf = norf;
+  }
+  toUpperCase() {
+    return `${this.foo.toUpperCase()}, ${this.norf.toUpperCase()}`;
+  }
+}
+```
+12.2 Create a subclass
+```javascript
+class Bar extends Foo {
+  constructor(foo, norf, bar ) {
+    // must call super before you use this in subclass
+    super(foo, norf);
+    this.bar = bar;
+  }
+  toUpperCase() {
+    return super.toUpperCase() + ' in ' + this.bar;
+  }
+}
+
+const bar = new Bar('foo', 'norf', 'bar');
+bar.toUpperCase();
+// => 'FOO', 'NORF' in 'bar'
+
+bar instanceof Foo; // => true
+bar instanceof Bar; // => true
+```
+
+12.3 You can override the result of a constructor by explicitly returning an object:
+```
+class Foo {
+  constructor() {
+    return Object.create(null);
+  }
+}
+console.log(new Foo() instanceof Foo); // => false
+```
+
+> (v). You might want to return Array objects in your derived array class MyArray. The species
+  pattern lets you override default constructors.
+
+```javascript
+class MyArray extends Array {
+  // Overwrite species to the parent Array constructor
+  static get [Symbol.species]() { return Array; }
+}
+
+var a = new MyArray(1,2,3);
+var mapped = a.map(x => x * x);
+
+console.log(mapped instanceof MyArray); // => false
+console.log(mapped instanceof Array);   // => true
+```
+
+> (vi). ES5 patterns brought us numerous ways to keep our data private, let's take a look at how we
+  we can do the same in ES6 classes. There is no way to natively do this, in either ES5 or ES6. We c
+  can accomplish this however by using using specific patterns. None is wholly superior might I add.
+
+12.4 Private data with naming conventions. Our data is safe, but we could have clashing private
+property naming clashes. Also this isn't elegant, everything is globbed within the constructor
+```javascript
+class Person {
+  constructor(name, age) {
+    this._name = name;
+    this._age = age;
+    this.setName = function(name) {
+      _name = name;
+    };
+    this.getName = function() {
+      return _name;
+    };
+    this.getAge = function() {
+      return _age
+    };
+  }
+}
+```
+
+12.5 You can use Symbols for private data whose properties you don't want to expose. The trade-off
+here is that you can use reflection and expose all property keys. It's a somewhat private way.
+```javascript
+const name = Symbol('name');
+const age = Symbol('age');
+
+class Person {
+  constructor(name, age) {
+    this[_name] = name;
+    this[_age] = age;
+  }
+}
+const p = new Person('Raul', 40);
+
+console.log(Object.keys(p)); // => []
+console.log(Reflect.ownKeys(c));// => [ Symbol(name), Symbol(age) ]
+```
+
+12.6 Using WeakMaps is probably your best bet in a world of half answers
+```javascript
+let Person = (function () {
+  let privateProps = new WeakMap();
+
+  class Person {
+    constructor(name) {
+      this.name = name; // this is public
+      privateProps.set(this, {age: 20}); // this is private
+    }
+    greet() {
+      // Here we can access both name and age
+      console.log(`name: ${this.name}, age: ${privateProps.get(this).age}`);
+    }
+  }
+
+  return Person;
+})();
+
+let joe = new Person('Joe');
+joe.greet();
+
+// here we can access joe's name but not age
+```
