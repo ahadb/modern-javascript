@@ -52,7 +52,7 @@ Listed within this repository will be the following types of patterns:
 4. ARRAY PATTERNS  
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/array-patterns/array-creation.js)       
     4.2 Array Enumeration  
-    4.3 Array Methods  
+    4.3 ES6 Array Methods  
     4.4 Functional Arrays       
 
 5. FUNCTION PATTERNS  

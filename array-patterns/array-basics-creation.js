@@ -31,7 +31,9 @@ console.log(typeof floatingArr); // => undefined
 // a. Create an array using the literal syntax
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 days.length
+// find the first element by indexing into Array, arrays are 0 based indexes
 const first = days[0];
+// find the last element by indexing into Array, arrays are 0 based indexes
 const last = days[days.length - 1];
 
 // b. From time to time, you'll want to check if your object is an Array, JS has typing problems.
@@ -46,10 +48,33 @@ Array.isArray('norf');     // => false
 Array.isArray(null);    // => false
 
 
-// c. Now let's go over some basic ES5 array methods(on above array) to get ourselves acquainted
+// c. Now let's go over some basic ES5 array methods(on above array) to get ourselves acquainted.
+// Will save looping for another section
 
+// add to front of an Array
+const animals = ['Bear', 'Eagle', 'Squirrel'];
+animals.unshift('Leopard');
+// => ['Leopard' ,'Bear', 'Eagle', 'Squirrel'];
 
+// add to the end of an Array
+animals.push['Monkey'];
+// => ['Leopard' ,'Bear', 'Eagle', 'Squirrel', 'Monkey'];
 
+// remove from the front of an Array
+const firstOfAnimals = animals.shift();
+// => ['Bear', 'Eagle', 'Squirrel', 'Monkey'];
+
+// remove from the end of an Array
+const lastOfAnimals = animals.shift();
+// => ['Bear', 'Eagle', 'Squirrel'];
+
+// find the index of an item in the Array
+const position = animals.indexOf('Eagle');
+// => 1
+
+// remove an item by index position
+const removedItem = animals.splice(position, 1);
+// => ['Bear', 'Squirrel'];
 
 
 
