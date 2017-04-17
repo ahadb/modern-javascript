@@ -1,0 +1,55 @@
+/**
+ * CH. 04 - Core JavaScript Object Creation & Design Patterns
+ * Array Creation
+ *
+ * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
+ * @copyright 2016 - 2017, Ahad Bokhari
+ * license: MIT
+ */
+
+
+/* (i). There are two ways to create arrays in JavaScript, one using the new keyword and the other
+ * defining an array literal (the latter being much more popular, I advise to use that technique to
+ * avoid passing a possible trap the from new Array() constructor has for you. Nevertheless, let's
+ * take a peek at this lesser used technique.
+ */
+
+// a. Newing up an array
+let a = new Array(5);
+console.log(a.length); // => 5
+console.log(a[0]); // => undefined
+a; // => [undefined x 5]
+
+// b. Problems with new and floating point numbers
+let floatingArr = new Array(1.11); // => Uncaught RangeError: Invalid array length
+console.log(typeof floatingArr); // => undefined
+
+/* (ii). The preferred method of course is to create an array literal for your friendly list-like
+ * object
+ */
+
+// a. Create an array using the literal syntax
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+days.length
+const first = days[0];
+const last = days[days.length - 1];
+
+// b. From time to time, you'll want to check if your object is an Array, JS has typing problems.
+// You've seen people trip up on this before
+typeof null === 'object';
+typeof null !== 'null';
+// enter Array.isArray
+Array.isArray([1, 2, 3]);    // => true
+Array.isArray([{foo: 123}]); // => true
+Array.isArray({baz: 'foo'});  // => false
+Array.isArray('norf');     // => false
+Array.isArray(null);    // => false
+
+
+// c. Now let's go over some basic ES5 array methods(on above array) to get ourselves acquainted
+
+
+
+
+
+
