@@ -1,17 +1,19 @@
-# JavaScript Patterns
-An extensive list of everyday modern JavaScript design and coding patterns (patterns in general, not just design patterns) with syntactical examples in both ES5 and ES6.
+# Modern JavaScript
+An extensive list of everyday modern JavaScript with syntactical examples as well as an easy to follow README structure
 
 ## Introduction
 This repository is a place for pragmatic javascript developers (beginners to advanced) to view and familiarize themselves with modern
-everyday patterns and idioms in vanilla style ES5 & ES6. The great majority of patterns are found here are very useful and common, while others might not be as popular. There are no silver bullets, so please don't try and force your problem to fit a pattern or tool.
+everyday patterns and idioms in vanilla style ES5 & ES6. The great majority of syntax found here is very useful and common in the modern world of JavaScript. Note, there are no silver bullets, so please don't try and force your problem to fit a pattern or tool.
 
-I hope you find that this repo will help you think to quickly recognize even the trivial of patterns - most of all I hope you find invaluable inspiration and satisfaction as you work through the examples. For novices, you'll gain the most if you revisit them after you've gained some experience.
+I hope you find that this repo will help you to quickly recognize even the trivial of syntax and therefore be able to apply it in your situation - most of all I hope you find invaluable inspiration and satisfaction as you work through the examples. For novices, you'll gain the most if you revisit them after you've gained some experience.
 
-Listed within this repository will be the following types of patterns:
- * General Code Patterns
+Listed within this repository is not only syntax but patterns and other useful concepts as well:
+ * Essential Code Syntax & Guidelines
  * Design Patterns
- * Modern Patterns (ES6, Functional)
- * Select Framework Patterns
+ * Modern Functional Patterns / Concepts
+ * ES6 / ES7
+ * Async
+ 
 
 ...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters, JavaScript technocrats, and technology pundits that came before us outlining important and often misunderstood concepts. 
 
@@ -29,17 +31,17 @@ Listed within this repository will be the following types of patterns:
     1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-javascript/README.md#scope)  
     1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-javascript/README.md#conditionals)  
  
-2. [**CORE JS OBJECT CREATION & CORE DESIGN PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
-    2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-creation)  
-    2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-create)  
+2. [**CORE JS OBJECT CREATION & CORE DESIGN PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/objects)  
+    2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-creation)  
+    2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-create)  
     2.3 Object Enumeration  
-    2.4 [Object Factory Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-factory-pattern)  
-    2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#namespace-pattern)   
-    2.6 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#module-pattern)    
-    2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#chaining-pattern)  
-    2.8 [Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#es5-constructor-function-pattern)    
-    2.9 [Prototype Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#prototype-pattern)     
-    2.10 [Class Pattern](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#class-pattern)  
+    2.4 [Object Factory Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-factory-pattern)  
+    2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#namespace-pattern)   
+    2.6 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#module-pattern)    
+    2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#chaining-pattern)  
+    2.8 [Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#es5-constructor-function-pattern)    
+    2.9 [Prototype Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#prototype-pattern)     
+    2.10 [Class Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#class-pattern)  
 
 3. JAVASCRIPT DESIGN PATTERNS  
     3.1 Singleton Pattern  
@@ -49,8 +51,8 @@ Listed within this repository will be the following types of patterns:
     3.5 Decorator Pattern  
     3.6 Facade Pattern 
        
-4. ARRAYS 
-    4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/array-patterns/array-creation.js)       
+4. ARRAYS    
+    4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
     4.2 Array Enumeration  
     4.3 ES6 Array Methods  
     4.4 Functional Arrays       
