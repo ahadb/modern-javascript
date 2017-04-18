@@ -76,7 +76,10 @@ const position = animals.indexOf('Eagle');
 const removedItem = animals.splice(position, 1);
 // => ['Bear', 'Squirrel'];
 
+// shallow vs. deep copy
 
+
+// array length
 
 
 

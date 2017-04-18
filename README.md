@@ -14,7 +14,6 @@ Listed within this repository is not only syntax but patterns and other useful c
  * ES6 / ES7
  * Async
  
-
 ...note that the work here has been identified by the JavaScript community as well as within the authors own work. Thanks should be given to the developers, early adopters, JavaScript technocrats, and technology pundits that came before us outlining important and often misunderstood concepts. 
 
 ## Table of Contents
@@ -35,13 +34,14 @@ Listed within this repository is not only syntax but patterns and other useful c
     2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-creation)  
     2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-create)  
     2.3 Object Enumeration  
-    2.4 [Object Factory Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-factory-pattern)  
-    2.5 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#namespace-pattern)   
-    2.6 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#module-pattern)    
-    2.7 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#chaining-pattern)  
-    2.8 [Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#es5-constructor-function-pattern)    
-    2.9 [Prototype Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#prototype-pattern)     
-    2.10 [Class Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#class-pattern)  
+    2.4 Object Cloning  
+    2.5 [Object Factory Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#object-factory-pattern)  
+    2.6 [NameSpace Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#namespace-pattern)   
+    2.7 [Module Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#module-pattern)    
+    2.8 [Chaining Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#chaining-pattern)  
+    2.9 [Constructor Function Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#es5-constructor-function-pattern)    
+    2.10 [Prototype Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#prototype-pattern)     
+    2.11 [Class Pattern](https://github.com/ahadb/javascript-patterns/tree/master/objects#class-pattern)  
 
 3. JAVASCRIPT DESIGN PATTERNS  
     3.1 Singleton Pattern  
@@ -53,9 +53,9 @@ Listed within this repository is not only syntax but patterns and other useful c
        
 4. ARRAYS    
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
-    4.2 Array Enumeration  
+    4.2 Array Iteration  
     4.3 ES6 Array Methods  
-    4.4 Functional Arrays       
+    4.4 Array Cloning         
 
 5. FUNCTIONS  
     5.1 IIFE / IIAF  
