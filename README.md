@@ -17,19 +17,19 @@ Listed within this repository will be the following types of patterns:
 
 ## Table of Contents
 
-1. [**CORE PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns)  
-    1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#variable-declarations)  
-    1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#let-and-const)   
-    1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#global-variables)  
-    1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#coding-and-naming-conventions)  
-    1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#commas-comments-semicolons-and-whitespace)  
-    1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#strings)  
-    1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/core-patterns#implicit-coercion)    
-    1.8 [Iteration Statements / Loops](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#iteration-statements)  
-    1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#scope)  
-    1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/core-patterns/README.md#conditionals)  
+1. [**ESSENTIAL JAVASCRIPT**](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript)  
+    1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#variable-declarations)  
+    1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#let-and-const)   
+    1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#global-variables)  
+    1.4 [Coding & Naming Conventions](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#coding-and-naming-conventions)  
+    1.5 [Commas, Comments, Semicolons & Whitespace](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#commas-comments-semicolons-and-whitespace)  
+    1.6 [Strings](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#strings)  
+    1.7 [Implicit Coercion](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#implicit-coercion)    
+    1.8 [Iteration Statements / Loops](https://github.com/ahadb/javascript-patterns/blob/master/essential-javascript/README.md#iteration-statements)  
+    1.9 [Block Scope vs Lexical Scope](https://github.com/ahadb/javascript-patterns/blob/master/essential-javascript/README.md#scope)  
+    1.10 [Conditionals](https://github.com/ahadb/javascript-patterns/blob/master/essential-javascript/README.md#conditionals)  
  
-2. [**CORE JS OBJECT CREATION & DESIGN PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
+2. [**CORE JS OBJECT CREATION & CORE DESIGN PATTERNS**](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns)  
     2.1 [Object Creation](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-creation)  
     2.2 [Object.create](https://github.com/ahadb/javascript-patterns/tree/master/object-patterns#object-create)  
     2.3 Object Enumeration  
@@ -49,13 +49,13 @@ Listed within this repository will be the following types of patterns:
     3.5 Decorator Pattern  
     3.6 Facade Pattern 
        
-4. ARRAY PATTERNS  
+4. ARRAYS 
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/array-patterns/array-creation.js)       
     4.2 Array Enumeration  
     4.3 ES6 Array Methods  
     4.4 Functional Arrays       
 
-5. FUNCTION PATTERNS  
+5. FUNCTIONS  
     5.1 IIFE / IIAF  
     5.2 Immediate Object Initialization      
     5.3 Function Invocation  
@@ -73,12 +73,12 @@ Listed within this repository will be the following types of patterns:
     6.3 Async Generators  
     6.4 Async Functions  
  
-7. MODULE CREATION PATTERNS  
+7. MODULE CREATION  
     7.1 Node & NPM    
     7.2 ES6  
     7.3 Babel  
  
-8. MODERN JAVASCRIPT PATTERNS   
+8. MODERN JAVASCRIPT   
     8.2 Higher Order Functions  
     8.2 Imperative vs. Declarative Programming  
     8.3 Higher Order Functions  

@@ -78,3 +78,5 @@ const removedItem = animals.splice(position, 1);
 
 
 
+
+
