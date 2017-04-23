@@ -1,1 +1,1 @@
-# Async Patterns
+# Asynchronous Patterns
