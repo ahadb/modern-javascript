@@ -58,4 +58,41 @@ while (k < length) {
   i++
 }
 
+/* (iii). ES5 gives us the forEach method which is shorter, but the one minor drawback is that you can't break out of the loop using the break statement
+ * or return from the enclosing function
+ */
 
+// a. simple example of forEach
+var arr = ['one', 'two', 'three', 'four'];
+
+// ES5 style
+arr.forEach(function (value) {
+  console.log(value);
+});
+
+// ES6 styles with arrow function
+arr.forEach(i => console.log(i));
+
+arr.forEach((i) => {
+  console.log(i);
+});
+
+
+/* (iv). The temptation of using a for-in loop will always lead you down a rabbit hole, this is a bad idea for many reasons so don't do it. The for-in was
+ * designed to work on plain old objects with string keys and therefore not a great choice for Arrays
+ */
+
+for (var index in myArray) {
+  console.log(myArray[index]);
+}
+
+/* (v). Another elegant solution that you can use is by using map - note that this is more of a functional approach and quite slow. Also you'll only need it
+ * when you need to create a new array with the results of calling a provided function on every element */
+
+// a. using map
+var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+console.log(numbers);
+console.log(roots);
+// => roots is now [1, 2, 3]
+// => numbers is still [1, 4, 9]
