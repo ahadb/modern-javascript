@@ -64,7 +64,7 @@ Listed within this repository is not only syntax but patterns and other useful c
       6. Array.prototype.find(predicate, thisArg?)
       7. Array.prototype.findIndex(predicate, thisArg?)
       8. Array.prototype.copyWithin(target, start, end=this.length)
-      9. Array.prototype.fill(value, start=0, end=this.length)
+      9. Array.prototype.fill(value, start=0, end=this.length)      
     4.5 Array Cloning         
 
 5. FUNCTIONS  
