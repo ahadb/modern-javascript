@@ -55,16 +55,16 @@ Listed within this repository is not only syntax but patterns and other useful c
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
     4.2 [Array Iteration]()
     4.3 Iterator Object  
-    4.4 ES6 Array Methods  
+    4.4 ES6 Array Methods
       1. Array.from
       2. Array.of
       3. Array.prototype.entries()
       4. Array.prototype.keys()
-         Array.prototype.values()
-         Array.prototype.find(predicate, thisArg?)
-         Array.prototype.findIndex(predicate, thisArg?)
-         Array.prototype.copyWithin(target, start, end=this.length)
-         Array.prototype.fill(value, start=0, end=this.length)
+      5. Array.prototype.values()
+      6. Array.prototype.find(predicate, thisArg?)
+      7. Array.prototype.findIndex(predicate, thisArg?)
+      8. Array.prototype.copyWithin(target, start, end=this.length)
+      9. Array.prototype.fill(value, start=0, end=this.length)
     4.5 Array Cloning         
 
 5. FUNCTIONS  
