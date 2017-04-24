@@ -18,7 +18,7 @@ Listed within this repository is not only syntax but patterns and other useful c
 
 ## Table of Contents
 
-1. [**ESSENTIAL JAVASCRIPT**](https://github.com/ahadb/javascript-pat   terns/tree/master/essential-javascript)  
+1. [**ESSENTIAL JAVASCRIPT**](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript)  
     1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#variable-declarations)  
     1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#let-and-const)   
     1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#global-variables)  
@@ -56,16 +56,8 @@ Listed within this repository is not only syntax but patterns and other useful c
     4.2 [Array Iteration]()  
     4.3 Iterator Object  
     4.4 ES6 Array Methods  
-      &rarr; Array.from  
-      &rarr; Array.of  
-      &rarr; Array.prototype.entries()  
-      &rarr; Array.prototype.keys()  
-      &rarr; Array.prototype.values()  
-      &rarr; Array.prototype.find(predicate, thisArg?)  
-      &rarr; Array.prototype.findIndex(predicate, thisArg?)  
-      &rarr; Array.prototype.copyWithin(target, start, end=this.length)  
-      &rarr; Array.prototype.fill(value, start=0, end=this.length)        
-    4.5 Array Cloning         
+    4.5 Array Cloning  
+    4.6 Functional JavaScript         
 
 5. FUNCTIONS  
     5.1 IIFE / IIAF  
