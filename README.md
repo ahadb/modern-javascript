@@ -18,7 +18,7 @@ Listed within this repository is not only syntax but patterns and other useful c
 
 ## Table of Contents
 
-1. [**ESSENTIAL JAVASCRIPT**](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript)  
+1. [**ESSENTIAL JAVASCRIPT**](https://github.com/ahadb/javascript-pat   terns/tree/master/essential-javascript)  
     1.1 [Variable Declaration](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#variable-declarations)  
     1.2 [`let` & `const`](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#let-and-const)   
     1.3 [Global Variables](https://github.com/ahadb/javascript-patterns/tree/master/essential-javascript#global-variables)  
@@ -53,18 +53,18 @@ Listed within this repository is not only syntax but patterns and other useful c
        
 4. [**ARRAYS**](https://github.com/ahadb/modern-javascript/tree/master/arrays)    
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
-    4.2 [Array Iteration]()
+    4.2 [Array Iteration]()  
     4.3 Iterator Object  
-    4.4 ES6 Array Methods
-      1. Array.from
-      2. Array.of
-      3. Array.prototype.entries()
-      4. Array.prototype.keys()
-      5. Array.prototype.values()
-      6. Array.prototype.find(predicate, thisArg?)
-      7. Array.prototype.findIndex(predicate, thisArg?)
-      8. Array.prototype.copyWithin(target, start, end=this.length)
-      9. Array.prototype.fill(value, start=0, end=this.length)      
+    4.4 ES6 Array Methods  
+      &rarr; Array.from  
+      &rarr; Array.of  
+      &rarr; Array.prototype.entries()  
+      &rarr; Array.prototype.keys()  
+      &rarr; Array.prototype.values()  
+      &rarr; Array.prototype.find(predicate, thisArg?)  
+      &rarr; Array.prototype.findIndex(predicate, thisArg?)  
+      &rarr; Array.prototype.copyWithin(target, start, end=this.length)  
+      &rarr; Array.prototype.fill(value, start=0, end=this.length)        
     4.5 Array Cloning         
 
 5. FUNCTIONS  
