@@ -53,9 +53,19 @@ Listed within this repository is not only syntax but patterns and other useful c
        
 4. [**ARRAYS**](https://github.com/ahadb/modern-javascript/tree/master/arrays)    
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
-    4.2 [Array Iteration]()  
-    4.3 ES6 Array Methods  
-    4.4 Array Cloning         
+    4.2 [Array Iteration]()
+    4.3 Iterator Object  
+    4.4 ES6 Array Methods  
+        * Array.from
+        * Array.of
+        * Array.prototype.entries()
+        * Array.prototype.keys()
+        * Array.prototype.values()
+        * Array.prototype.find(predicate, thisArg?)
+        * Array.prototype.findIndex(predicate, thisArg?)
+        * Array.prototype.copyWithin(target, start, end=this.length)
+        * Array.prototype.fill(value, start=0, end=this.length)
+    4.5 Array Cloning         
 
 5. FUNCTIONS  
     5.1 IIFE / IIAF  

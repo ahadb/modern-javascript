@@ -96,3 +96,71 @@ console.log(numbers);
 console.log(roots);
 // => roots is now [1, 2, 3]
 // => numbers is still [1, 4, 9]
+
+
+/* (vi). Let vs Var in for-loops is another good topic to understand and think about before you blindly start looping in your projects. Using let one can be explicit
+ * about the scoping to a particular block as opposed to implicit function scoping with var */
+
+//a. using let in a for loop
+let myArr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < myArr.length; i ++) {
+  console.log('Index: ' + [i] + ',' + ' Item: ' + myArr[i]);
+}
+
+/* =>
+ Index: 0, Item: BMW
+ Index: 1, Item: Volvo
+ Index: 2, Item: Saab
+ Index: 3, Item: Ford
+ Index: 4, Item: Fiat
+ Index: 5, Item: Audi
+ */
+
+// log [i] outside of the { } scope. Remember let creates block scope and not function scope like var
+console.log(i);
+// => Uncaught ReferenceError: i is not defined
+
+// b. let does not hoist to the entire scope of the block it appears in, by contrast var could do so. This might be good for us though when
+// dealing with closures in a loop
+
+// when looping within a closure using var:
+for (var i = 0; i < 5; ++i) {
+  setTimeout(function () {
+    console.log(i); // output '5' 5 times
+  }, 100);
+}
+// => 5, 5, 5, 5, 5
+
+for (let i = 0; i < 5; ++i) {
+  setTimeout(function () {
+    console.log(i);
+  }, 100);
+}
+// => 0, 1, 2, 3, 4
+
+// c. simple test with a var vs let function
+function varvslet() {
+  console.log(i); // i is undefined due to hoisting
+  // => console.log(j); // ReferenceError: j is not defined
+
+  for( var i = 0; i < 3; i++ ) {
+    console.log(i); // => 0, 1, 2
+  }
+
+  console.log(i); // 3
+  // => console.log(j); // ReferenceError: j is not defined
+
+  for( let j = 0; j < 3; j++ ) {
+    console.log(j);
+  }
+
+  console.log(i); // 3
+  // => console.log(j); // ReferenceError: j is not defined
+}
+
+
+
+
+
+/* (vii). Might for in */
