@@ -53,7 +53,7 @@ Listed within this repository is not only syntax but patterns and other useful c
        
 4. [**ARRAYS**](https://github.com/ahadb/modern-javascript/tree/master/arrays)    
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
-    4.2 [Array Iteration]()  
+    4.2 [Array Iteration](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-iteration.js)  
     4.3 Iterator Object  
     4.4 ES6 Array Methods  
     4.5 Array Cloning  
