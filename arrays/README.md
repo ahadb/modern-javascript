@@ -280,3 +280,38 @@ function varvslet() {
   // => console.log(j); // ReferenceError: j is not defined
 }
 ```
+
+> (vii). The Mighty for-of loop is the most concise and direct syntax for looping through an array. This ES6 feature avoids all the pitfalls
+  of for-in and unlike forEach(), it works with break, continue and return. This statement creates a loop iterating over iterable objects,
+  which includes Array, Map, and Set
+
+2.9 Iterating over an array
+```javascript
+let iterable = [1, 2, 3, 4, 5];
+
+for (let value of iterable) {
+  console.log(value);
+}
+```
+
+2.10 Iterating over a string
+```javascript
+let iterableStr = ['FooBar'];
+
+for (let letter of iterableStr) {
+  console.log(letter);
+}
+```
+
+2.11 Iterating over a Map
+```javascript
+let iterableMap = new Map([['a', 1], ['b', 2], ['c', 3]]);
+
+for (let entry of iterableMap) {
+  console.log(entry);
+}
+// you can also iterate over individual keys or values
+for (let [key, value] of iterableMap) {
+  console.log(key);
+}
+```
