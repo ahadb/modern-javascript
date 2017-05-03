@@ -54,10 +54,9 @@ Listed within this repository is not only syntax but patterns and other useful c
 4. [**ARRAYS**](https://github.com/ahadb/modern-javascript/tree/master/arrays)    
     4.1 [Array Basics & Creation](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-creation.js)       
     4.2 [Array Iteration](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-iteration.js)  
-    4.3 Iterator Object  
-    4.4 ES6 Array Methods  
-    4.5 Array Cloning  
-    4.6 Functional JavaScript         
+    4.3 [ES6 Array Methods](https://github.com/ahadb/modern-javascript/blob/master/arrays/es6-array-methods.js)  
+    4.4 Destructuring / Spread & Rest 
+    4.5 Functional Array Patterns         
 
 5. FUNCTIONS  
     5.1 IIFE / IIAF  
