@@ -77,7 +77,6 @@ arr.forEach((i) => {
   console.log(i);
 });
 
-
 /* (iv). The temptation of using a for-in loop will always lead you down a rabbit hole, this is a bad idea for many reasons so don't do it. The for-in was
  * designed to work on plain old objects with string keys and therefore not a great choice for Arrays
  */
