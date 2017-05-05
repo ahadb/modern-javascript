@@ -141,6 +141,7 @@ Index: 5, Item: Audi
 ```
 
 2.2 We can be more accurate...
+```javascript
 var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 var j = 0;
 var length = cars.length;
@@ -157,6 +158,7 @@ for (j = 0; j < length; j++) {
  Index: 4, Item: Fiat
  Index: 5, Item: Audi
  */
+```
 
 > (ii). You can also use the while loop, but it's much slower */
 
