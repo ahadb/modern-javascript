@@ -99,5 +99,20 @@ console.log(countries.length); // => 20
 console.log(countries); // => ["Africa", "England", "Afghanistan", "Turkey", undefined × 16, "Australia"]
 console.log(Object.keys(countries)); // => ["0", "1", "2", "3", "20"]
 
+/* (iv). Let's review some methods of the Array prototype, and then you can expore their possibilites - take away the actions implemented on the array
+ * more than anything else in this short exercise
+ */
+
+/* => some array methods
+************************
+* The `in` operator
+* Lookups with `.indexOf`
+* Querying with `.filter`
+* Model mapping with `.map`
+* Ordering with `.sort`
+* Computing with `.reduce` and `.reduceRight`
+* The powerful `.splice`
+* Asserting with `.some` and `.every`
+*/
 
 
