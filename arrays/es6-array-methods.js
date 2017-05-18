@@ -11,12 +11,16 @@
  * lacking in the language, but now we have many more tools for the functional array.
  */
 
-// a. Array.from: long overdue method - Creates a new Array instance from an array-like or iterable object
+/* Array.from: long overdue method - Creates a new Array instance from an array-like or iterable object */
 
+// a. array from stromg
 Array.from('string');
 // => ["s", "t", "r", "i", "n", "g"]
 
-Array.from('')
+// b. array from Map
+const arrayFromMap = new Map([[1, 2], [2, 4], [4, 8]]);
+Array.from(arrayFromMap); 
+// => [[1, 2], [2, 4], [4, 8]]
 
 // b. entries()
 
