@@ -13,7 +13,7 @@
 
 /* Array.from: long overdue method - Creates a new Array instance from an array-like or iterable object */
 
-// a. array from stromg
+// a. array from string
 Array.from('string');
 // => ["s", "t", "r", "i", "n", "g"]
 
