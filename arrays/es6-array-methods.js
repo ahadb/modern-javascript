@@ -27,9 +27,18 @@ const s = new Set(['foo', 'bar', 'baz', 'norf', 'quux', 1, null, undefined]);
 const arrFromSet = Array.from(s);
 // => (8) ["foo", "bar", "baz", "norf", "quux", 1, null, undefined]
 
-// b. entries()
+/* b. Array.entries */
+let a = ['a', 'b', 'c'];
+let iterator = a.entries();
 
-// c. fill()
+console.log(iterator.next().value); // [0, 'a']
+console.log(iterator.next().value); // [1, 'b']
+console.log(iterator.next().value); // [2, 'c']
+
+/* Array.fill() */
+let numbers = [1, 2, 3]
+numbers.fill(1);
+// => results in [1, 1, 1]
 
 // d. find()
 
