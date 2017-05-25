@@ -22,6 +22,11 @@ const arrayFromMap = new Map([[1, 2], [2, 4], [4, 8]]);
 Array.from(arrayFromMap); 
 // => [[1, 2], [2, 4], [4, 8]]
 
+// c. array from Set
+const s = new Set(['foo', 'bar', 'baz', 'norf', 'quux', 1, null, undefined]);
+const arrFromSet = Array.from(s);
+// => (8) ["foo", "bar", "baz", "norf", "quux", 1, null, undefined]
+
 // b. entries()
 
 // c. fill()
