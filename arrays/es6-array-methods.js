@@ -1,5 +1,5 @@
 /**
- * CH. 04 - Core JavaScript Object Creation & Design Patterns
+ * CH. 03 - Arrays
  * ES6 Array Methods
  *
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
@@ -36,11 +36,11 @@ console.log(iterator.next().value); // [1, 'b']
 console.log(iterator.next().value); // [2, 'c']
 
 /* Array.fill() */
-let numbers = [1, 2, 3]
+let numbers = [1, 2, 3];
 numbers.fill(1);
 // => results in [1, 1, 1]
 
-/* d. find() */
+/* Array.find() */
 const inventory = [
     {name: 'apples', quantity: 2},
     {name: 'bananas', quantity: 0},
@@ -54,7 +54,17 @@ function findCherries(fruit) {
 console.log(inventory.find(findCherries)); 
 // => { name: 'cherries', quantity: 5 }
 
-// e. findIndex()
+/* Array.findIndex() */
+const ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+const findIndexByAges = ages.findIndex(checkAdult);
+console.log(findIndexByAges);
+// => 2
+
 
 // f. keys()
 

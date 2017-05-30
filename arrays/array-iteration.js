@@ -1,5 +1,5 @@
 /**
- * CH. 04 - Core JavaScript Object Creation & Design Patterns
+ * CH. 02 - Arrays
  * Array Iteration
  *
  * JavaScript Patterns - modern JS patterns with ES5 & ES6 examples
