@@ -40,7 +40,19 @@ let numbers = [1, 2, 3]
 numbers.fill(1);
 // => results in [1, 1, 1]
 
-// d. find()
+/* d. find() */
+const inventory = [
+    {name: 'apples', quantity: 2},
+    {name: 'bananas', quantity: 0},
+    {name: 'cherries', quantity: 5}
+];
+
+function findCherries(fruit) { 
+    return fruit.name === 'cherries';
+}
+
+console.log(inventory.find(findCherries)); 
+// => { name: 'cherries', quantity: 5 }
 
 // e. findIndex()
 
