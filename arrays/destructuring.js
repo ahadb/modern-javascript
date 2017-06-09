@@ -42,14 +42,21 @@ const [a, , b] = [1, 2, 3];
 console.log(a, b);
 //=> 1 3
 
-// e. destructure nested array
+// e. use from functions, only select from pattern
+const foo = () => [1, 2, 3];
+
+const [a, b] = foo();
+console.log(a, b);
+// => 1 2
+
+// f. destructure nested array
 const avengers = [
   'Natasha Romanoff',
   ['Tony Stark', 'James Rhodes'],
   ['Steve Rogers', 'Sam Wilson']
 ];
 
-// Avengers and their partners
+
 const [blackWidow, [ironMan, warMachine], [cap, falcon]] = avengers;
 
 // blackWidow = 'Natasha Romanoff'
@@ -58,5 +65,16 @@ const [blackWidow, [ironMan, warMachine], [cap, falcon]] = avengers;
 // cap = 'Steve Rogers'
 // falcon = 'Sam Wilson'
 
-// Output warMachine:
 warMachine;
+//=> outputs 'Sam Wilson'
+
+// g. combine with spread/rest operator (accumulates the rest of the values)
+const [a, ...b] = [1, 2, 3];
+console.log(a, b);
+// => 1 [ 2, 3 ]
+
+// h. advanced, deep arrays
+// Advance deep arrays
+const [a, [b, [c, d]]] = [1, [2, [[[3, 4], 5], 6]]];
+console.log("a:", a, "b:", b, "c:", c, "d:", d);
+// => a: 1 b: 2 c: [ [ 3, 4 ], 5 ] d: 6
