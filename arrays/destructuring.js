@@ -78,3 +78,6 @@ console.log(a, b);
 const [a, [b, [c, d]]] = [1, [2, [[[3, 4], 5], 6]]];
 console.log("a:", a, "b:", b, "c:", c, "d:", d);
 // => a: 1 b: 2 c: [ [ 3, 4 ], 5 ] d: 6
+
+/* (iii). Object Destructuring */
+
