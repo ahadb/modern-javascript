@@ -2,7 +2,7 @@
 
 1. [Array Basics & Creation](#array-basics-and-creation)  
 2. [Array Iteration](#array-iteration)
-3. [ES6 Array Methods](#ES6-array-methods)
+3. [ES6 Array Methods](#es6-array-methods)
 4. Functional Programming with Arrays
 
 
