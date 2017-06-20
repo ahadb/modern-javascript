@@ -85,4 +85,17 @@ console.log("a:", a, "b:", b, "c:", c, "d:", d);
 const { num: x } = { num: 5 }; 
 console.log(num); //=> outputs 5
 
+// more values
+const {prop: x, prop2: y} = {prop: 5, prop2: 10};
+console.log(x, y);
+// => 5 10
 
+// short-hand syntax
+const { prop, prop2} = {prop: 5, prop2: 10};
+console.log(prop, prop2);
+// => 5 10
+
+// Equal to:
+const { prop: prop, prop2: prop2} = {prop: 5, prop2: 10};
+console.log(prop, prop2);
+// => 5 10
