@@ -56,7 +56,7 @@ Listed within this repository is not only syntax but patterns and other useful c
     4.2 [Array Iteration](https://github.com/ahadb/javascript-patterns/blob/master/arrays/array-iteration.js)  
     4.3 [ES6 Array Methods](https://github.com/ahadb/modern-javascript/blob/master/arrays/es6-array-methods.js)  
     4.4 [Destructuring](https://github.com/ahadb/modern-javascript/blob/master/arrays/destructuring.js)  
-    4.5 Spread Operator  
+    4.5 [Spread Operator](https://github.com/ahadb/modern-javascript/blob/master/arrays/spread-operator.js)
     4.6 Rest Parameters   
     4.5 Functional Array Patterns           
 
