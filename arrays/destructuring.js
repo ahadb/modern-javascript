@@ -99,3 +99,15 @@ console.log(prop, prop2);
 const { prop: prop, prop2: prop2} = {prop: 5, prop2: 10};
 console.log(prop, prop2);
 // => 5 10
+
+// Deep objects
+const {
+  prop: x,
+  prop2: {
+    prop2: {
+      nested: [ , , b]
+    }
+  }
+} = { prop: "Hello", prop2: { prop2: { nested: ["a", "b", "c"]}}};
+console.log(x, b);
+// => Hello c
